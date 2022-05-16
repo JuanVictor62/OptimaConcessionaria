@@ -1,0 +1,132 @@
+.f2-login{
+    .f2-cabecalho{
+        display: flex;
+        justify-content: space-between;
+    
+        background-image: url(../../../public/assets/img/ImgFundo.png);
+        height: 5em;
+    }
+    
+    .f2-logo{
+        width: 8.5em;
+        height: 8em;
+        margin-left: 2em;
+        margin-top: -1em;
+    }
+    
+    .f2-botao{
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        margin-right: 3em;
+        height: 2em;
+        text-decoration: none;
+        font-family: 'inter';
+        color: #000000;
+        background-color: #ffffff;
+        padding: 0.3em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border-radius: 2em;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    /* Fundo Login*/
+
+    .f2-fundo {
+        background-image: url(../../../public/assets/img/background-login.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 5em;
+        padding-bottom: 29.8em;
+    }
+    
+    .f2-painellogin {
+        background-color: #DFDFDF90;
+        text-align: center;
+        margin-top: 5em;
+    
+        margin-left: 22em;
+        margin-right: 22em;
+    
+        padding-bottom: 5em;
+        
+    
+        border-radius: 30px;
+    }
+    
+    .f2-icon{
+        margin-top: 3em;
+    }
+    
+    .f2-user1 {
+        font-family: 'inter';
+        margin-right: 20em;
+        margin-top: 2em;
+    }
+    
+    .f2-user2 {
+        border: none;
+        margin-left: 10px;
+        margin-top: 1em;
+        font-size: 1em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-right: 12em;
+        border-radius: 5px;
+    }
+    
+    .f2-senha1 {
+        font-family: 'inter';
+        margin-right: 20em;
+        margin-top: 2em;
+    }
+    
+    .f2-senha2 {
+        border: none;
+        margin-left: 10px;
+        margin-top: 1em;
+        font-size: 1em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-right: 12em;
+        margin-bottom: 3em;
+        border-radius: 5px;
+    }
+    
+    .f2-logar {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: none;
+    
+        text-decoration: none;
+        font-family: 'inter' ;
+        color: #000000;
+        background-color: #ffffff;
+        padding: 0.3em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        border-radius: 2em;
+    }
+    
+    .f2-botao:hover {
+        color: #044886;
+        -webkit-transform:scale(1.1);
+        transform:scale(1.1);
+        transition: all 0.5s ease;
+        
+    }
+    
+    .f2-logar:hover {
+        -webkit-transform:scale(1.1);
+        transform:scale(1.1);
+        transition: all 0.5s ease;
+        color: #044886;
+        cursor: pointer;
+    }
+    
+    input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+}
