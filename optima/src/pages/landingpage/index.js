@@ -60,17 +60,16 @@ export default function index() {
                         </div>
 
                         <div className='f1-info'>
-
+                            <div className='f1-info2'>
                             <p className='f1-in-4'>
                                 Atuando no mercado veicular desde 2013 e atendendo mais de 17 estados, a optima conta com uma
                                 equipe de profissionais capacitados e de pronto atendimento, agrupando confiabilidade, conforto
                                 e prontidão. </p>
-                            <p classNameName='f1-in-5'>
-
+                            <p className='f1-in-5'>
                                 Afiliada com a <b> WebMotors</b>, a Optima conta com Semi-novos revisados por especialistas e com a
-                                documentação
-                                completa.
+                                documentação completa.
                                 </p>
+                            </div>
 
                                 <div>
 
