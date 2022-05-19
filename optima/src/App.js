@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
      
-     <h1> oADASDASD </h1> 
-     <a href='/landingpage'>dsad</a>   
+     <h1> Optima concessionaria </h1> 
+     <a href='/landingpage'>landingpage</a>   
     </div>
   );
 }
