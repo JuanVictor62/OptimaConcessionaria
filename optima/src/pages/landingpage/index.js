@@ -53,7 +53,7 @@ export default function index() {
 
                 <section id="info" className='f1-f2'>
 
-                        <div>
+                        <div className='info2'>
                             <h2 className='f1-in-3'>Sobre a</h2>
 
                             <img className='f1-log-2' src="./assets/img/optima black.png" width="140" height="100" alt='' />
@@ -118,7 +118,7 @@ export default function index() {
                             <img className='f1-cel' src="./assets/img/celular.png" alt='' />
 
                             <p className='f1-in-9'>A concessionaria tambem se dispõe a ajudar os interessados em nossos veiculos pelo WhatsApp para
-                                ajuda-los respondendo suas duvidas e fazer um convite para eles virem até a loja.</p>
+                                ajuda-los respondendo suas duvidas e fazer um convite para eles virem à loja.</p>
 
                         </div>
 
@@ -189,7 +189,7 @@ export default function index() {
 
 
                 <section className='f1-rodape'>
-                    <div f1-r-d1>
+                    <div className='f1-r-d1'>
                         <a href="../landing page/index.html"> <img className='f1-r-logo' src="./assets/img/optima white.png" alt='' /> </a>
                         <p className='f1-r-in-18'> &copy;Optima 2022</p>
                     </div>

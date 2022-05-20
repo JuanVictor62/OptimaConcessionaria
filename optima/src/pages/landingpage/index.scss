@@ -1489,4 +1489,68 @@
             width: 10%;
         }
     }
+
+    @media(max-width:1920px)
+    {
+        .landing-page {
+            width: 115.5vh;
+        }
+
+        .f1-bt-3-ctt {
+            margin-left: 5em;
+        }
+
+        .f1-bt-3-img {
+            position: relative;
+            left: 9.5em;
+            top: 2em;
+        }
+
+        .f1-info2 {
+            position: relative;
+            left: 5.5em;
+            width: 70%;
+        }
+
+        .info2 {
+            position: relative;
+            left: 8em;
+            width: 50%;
+        }
+
+        .f1-f3-1 {
+            position: relative;
+            left: 10em;
+            margin-right: 5em;
+        }
+
+        .f1-cards {
+            position: relative;
+            left: 5em;
+        }
+
+        .f1-cars {
+            position: relative;
+            left: 5em;
+        }
+
+        .f1-r-d1 {
+            margin-right:2em ;
+        }
+
+        .f1-r-d2 {
+            margin-right: 13em;
+        }
+
+        .f1-r-tpc2 {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        .aaaa {
+            width: 10%;
+            position: relative;
+            right: 9em;
+        }
+    }
 }

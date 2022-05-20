@@ -25,7 +25,7 @@ export default function index() {
                     <input class="f2-senha2" type="password" id="senha"/>
 
                     <p></p>
-                    <input class="f2-logar" type="submit" onclick="logar(); false"/> 
+                    <a href="../pagecarros"> <input class="f2-logar" type="submit" onclick="logar(); false"/> </a>
 
                 </div>            
             </div>

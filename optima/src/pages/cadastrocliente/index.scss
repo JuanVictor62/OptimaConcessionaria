@@ -197,4 +197,25 @@
         padding: 0.6em 1em 0.6em 1em;
     
     }
+
+    @media(max-width: 1920px)
+    {
+        .f2-f1 {
+            position: relative;
+            top: 4em;
+            margin-left: 4em;
+            z-index: 1;
+        }
+
+        .form {
+            position: relative;
+            right: -7em;
+            top: 5em;
+        }
+
+        .f2-fundo {
+            background-size: 100%;
+            height: 93.9vh;
+        }
+    }
 }

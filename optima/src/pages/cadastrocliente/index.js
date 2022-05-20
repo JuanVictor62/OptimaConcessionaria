@@ -20,7 +20,7 @@ export default function index() {
 
                 
 
-                <div class="f2-f1">
+                <div className="f2-f1">
                     <div class="f2-f1-1"> Cadastro de compras </div>
                     <img src="../../assets/img/icons8-comprar-90 1.png" alt=""/>
                 </div>

@@ -534,6 +534,12 @@
     .card-2-2 {
         margin-left: 14em;
     }
+
+    .card-2-2-1 {
+        position: relative;
+        left: 14em;
+        bottom: 1em;
+    }
     
     .c2-1 {
         position: relative;
@@ -764,5 +770,42 @@
     
     ::-webkit-scrollbar {
         width: 10px;
+    }
+
+    @media(max-width:1920px) 
+    {
+        .carros-geral {
+            margin-left: 3em;
+        }
+
+        .carros {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .f1-r-d1 {
+            margin-right:2em ;
+        }
+
+        .f1-r-d2 {
+            margin-right: 13em;
+        }
+
+        .f1-r-tpc2 {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        .f1-r-in-23 {
+            width: 100%;
+            position: relative;
+            right: 7em;
+        }
+
+        .card-2-2-1 {
+            position: relative;
+            left: 14em;
+            bottom: 1em;
+        }
     }
 }

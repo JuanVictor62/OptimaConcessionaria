@@ -143,7 +143,7 @@ export default function index() {
                 <b> Km: </b> 120.000
                 <br/>
                 <b> Valor: </b> R$ 92.999,00
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
+                    <p className="card-2-2-1"> <b>Código:</b> 00000 </p>
             </div>
         </div>
     </div>
