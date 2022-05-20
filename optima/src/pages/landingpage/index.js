@@ -1,5 +1,6 @@
 import './index.scss';
 import '../commom/commom.css';
+import {Link} from 'react-router-dom';
 
 
 export default function index() {
@@ -14,12 +15,12 @@ export default function index() {
 
                     <div className='f1-cab'>
 
-                        <a href="/landingpage"> 
+                        <Link to='/landingpage'> 
                             <img className='f1-log' src="./assets/img/logo.svg" width="180" height="90" alt='' /> 
-                        </a>
+                        </Link>
 
                         <div className='f1-bot'>
-                            <a href="../login" className='f1-bt-2'>Login</a>
+                            <Link to='/login' className='f1-bt-2'>Login</Link>
                         </div>
 
                     </div>
@@ -190,7 +191,7 @@ export default function index() {
 
                 <section className='f1-rodape'>
                     <div className='f1-r-d1'>
-                        <a href="../landing page/index.html"> <img className='f1-r-logo' src="./assets/img/optima white.png" alt='' /> </a>
+                        <Link to="/landingpage"> <img className='f1-r-logo' src="./assets/img/optima white.png" alt='' /> </Link>
                         <p className='f1-r-in-18'> &copy;Optima 2022</p>
                     </div>
                     <div className='f1-r-d2'>
@@ -209,7 +210,7 @@ export default function index() {
                         <div className='f1-r-tpc1'>
                             <h3 className='f1-in-19'>Inicio</h3>
                             <p className='f1-in-20'> <a href="#home" class="f1-in-20" > Home </a> </p>
-                            <a className='f1-in-20' href="../pagecarros"> <p className='f1-in-20' >Veiculos</p> </a>
+                            <Link to="/pagecarros" className='f1-in-20' > <p className='f1-in-20' >Veiculos</p> </Link>
                         </div>
                         <div className='f1-r-tpc2'>
                             <h3 className='f1-in-19'>Sobre nós</h3>

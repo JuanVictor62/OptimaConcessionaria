@@ -38,7 +38,4 @@ create table tb_cadastro_veiculo(
     img_veiculo          blob
 );
 
-insert into tb_cadastro_veiculo(ds_modelo,ds_marca,nr_valor,dt_anofabricacao,ds_quilometragem,nr_codigo,img_veiculo)
-	   values('IX 35', 'Hyundai',64.99999,2021,90.000,0000,img);
-
 select * from tb_cadastro_veiculo;

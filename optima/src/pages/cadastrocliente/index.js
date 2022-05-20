@@ -1,19 +1,20 @@
 import './index.scss';
 import '../commom/commom.css';
+import { Link } from 'react-router-dom';
 
 export default function index() {
     return(
         <main class="container">
 
         <div class="f2-cabecalho">
-            <a href="../landingpage"> 
+            <Link to="/pagecarros"> 
                 <img class="f2-logo" src="../../assets/img/Logo.svg" alt='' /> 
-            </a>
+            </Link>
 
-            <a class="f2-vei" href="../cadastrocarro/"> Cad. veículos</a>
-            <a class="f2-botao" href="../pagecarros">
+            <Link class="f2-vei" to="/cadastrocarro"> Cad. veículos</Link>
+            <Link class="f2-botao" to="/pagecarros">
                 Voltar
-            </a>
+            </Link>
         </div>
 
             <section class="f2-fundo">
@@ -128,7 +129,7 @@ export default function index() {
                         <br></br>
                         <input class="info2" type="Number"/>
 
-                    <a href="../Cadastro veiculos/index.html" class="aaaa"> Cadastrar </a>
+                    <Link to="/cadastrocliente" class="aaaa"> Cadastrar </Link>
                 </div>
             </div>
 

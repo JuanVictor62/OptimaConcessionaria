@@ -1,5 +1,6 @@
 import './index.scss';
 import '../commom/commom.css';
+import { Link } from 'react-router-dom';
 
 export default function index() {
     return(
@@ -9,7 +10,7 @@ export default function index() {
                  <img class="logo"  src="../../assets/img/optima white.png" alt=""/>
              </div>
              <div class="p4-bt-voltar">
-                 <a href="../pagecarros" class="p4-btvoltar"> voltar </a>
+                 <Link to="/cadastrocliente" class="p4-btvoltar"> voltar </Link>
              </div>
         </div>
 
@@ -62,7 +63,7 @@ export default function index() {
                     </div>
                 </div>
             </div>
-                <a href="/cadastrocarro" alt='' class="p4-btn-registrar"> Resgistrar </a>
+                <Link to="/cadastrocarro" alt='' class="p4-btn-registrar"> Resgistrar </Link>
         </div>
     </section>
 

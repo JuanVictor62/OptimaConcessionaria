@@ -1,17 +1,18 @@
 import './index.scss';
 import '../commom/commom.css';
+import { Link } from 'react-router-dom';
 
 export default function index() {
     return (
         <main class="f2-login">
             <div class="f2-cabecalho">
-                <a href="/landingpage"> 
+                <Link to="/landingpage"> 
                     <img class="f2-logo" src="./assets/img/logo.svg" alt=''/> 
-                </a>
+                </Link>
                 
-                <a class="f2-botao" href="../landingpage">
+                <Link to="/landingpage" class="f2-botao">
                     Voltar
-                </a>
+                </Link>
             </div>
 
             <div class="f2-fundo"> 
@@ -25,7 +26,7 @@ export default function index() {
                     <input class="f2-senha2" type="password" id="senha"/>
 
                     <p></p>
-                    <a href="../pagecarros"> <input class="f2-logar" type="submit" onclick="logar(); false"/> </a>
+                    <Link to="/pagecarros"> <input class="f2-logar" type="submit" onclick="logar(); false"/> </Link>
 
                 </div>            
             </div>

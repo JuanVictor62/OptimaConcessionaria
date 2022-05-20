@@ -1,17 +1,18 @@
 import './index.scss';
 import '../commom/commom.css';
+import {Link} from 'react-router-dom';
 
 export default function index() {
     return(
    <main class="f6-faixa6">
         <section>
             <div class="f6-cabecalho">
-                <a href="../landingpage">
+                <Link to="/landingpage">
                     <img class="f6-logo" src="../../assets/img/Logo.svg" alt=''/>
-                </a>
-                <a class="f6-botao" href="../pagecarros" alt=''>
+                </Link>
+                <Link class="f6-botao" to="/pagecarros" alt=''>
                     Voltar
-                </a>
+                </Link>
             </div>
 
         </section>
@@ -162,9 +163,9 @@ export default function index() {
 
     <section class="f1-rodape">
         <div f1-r-d1>
-            <a href="../landing page/index.html"> 
+            <Link to="/landingpage"> 
                 <img class="f1-r-logo" src="../../assets/img/optima white.png" alt=''/> 
-            </a>
+            </Link>
             <p class="f1-r-in-18"> &copy;Optima 2022</p>
         </div>
         <div class="f1-r-d2">
@@ -186,13 +187,13 @@ export default function index() {
             <div class="f1-r-tpc1">
                 <h3 class="f1-in-19">Inicio</h3>
                 <p class="f1-in-20"> 
-                    <a class="f1-in-20" href="../landingpage"> 
+                    <Link class="f1-in-20" to="/landingpage"> 
                         Home 
-                    </a> 
+                    </Link> 
                 </p>
-                <a class="f1-in-20" href="../pagecarros">
+                <Link class="f1-in-20" to="/pagecarros">
                     <p class="f1-in-20">Veiculos</p>
-                </a>
+                </Link>
             </div>
             <div class="f1-r-tpc2">
                 <h3 class="f1-in-19">Sobre nós</h3>

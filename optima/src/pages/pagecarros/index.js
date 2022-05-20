@@ -1,20 +1,21 @@
 import './index.scss';
 import '../commom/commom.css';
+import {Link} from 'react-router-dom';
 
 export default function index() {
     return(
         <main className="container">
 
         <div className="f2-cabecalho">
-            <a href="../landingpage"> 
+            <Link to="/landingpage"> 
                 <img className="f2-logo62" src="../../assets/img/Logo.svg" alt=''/> 
-            </a>
+            </Link>
             
-            <a href="../cadastrocliente" className="f1-botao">Cadastro</a>
+            <Link to="/cadastrocliente" className="f1-botao">Cadastro</Link>
 
-            <a href="../consulta" className="f3-botao">Pedidos </a>
+            <Link to="/consulta" className="f3-botao">Pedidos </Link>
 
-            <a className="f2-botao62" href="../landingpage">Voltar</a>
+            <Link to="/landingpage" className="f2-botao62">Voltar</Link>
 
 
             <div className="f1-bts">
@@ -455,23 +456,23 @@ export default function index() {
             <div className="f1-r-tpc1">
                 <h3 className="f1-in-19">Inicio</h3>
                 <p className="f1-in-20"> 
-                    <a className="f1-in-20" href="../landingpage" alt=''>
+                    <Link className="f1-in-20" to="/landingpage" alt=''>
                         Home 
-                    </a>
+                    </Link>
                 </p>
-                <a className="f1-in-20" href="../pagecarros" alt=''> 
+                <Link className="f1-in-20" to="/pagecarros" alt=''> 
                     <p className="f1-in-20">
                         Veiculos
                     </p> 
-                </a>
+                </Link>
             </div>
             <div className="f1-r-tpc2">
                 <h3 className="f1-in-19">Sobre nós</h3>
-                <a className="f1-in-20" href="../landingpage" alt=''> 
+                <Link className="f1-in-20" to="/landingpage" alt=''> 
                     <p className="f1-in-20">
                         Informações da empresa 
                     </p> 
-                </a>
+                </Link>
                 
                 <a className="f1-in-20" href="https://api.whatsapp.com/send?phone=5511988749207">
                     <p className="f1-in-20">
