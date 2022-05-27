@@ -12,7 +12,6 @@ insert into tb_funcionario (ds_funcionario,ds_senha)
 	   values ('admin','admin');
 
 select * from tb_funcionario;
-
 select * from tb_cliente;
 
 create table tb_cadastro_veiculo(
