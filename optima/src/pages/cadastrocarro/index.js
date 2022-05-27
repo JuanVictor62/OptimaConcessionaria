@@ -63,7 +63,7 @@ export default function index() {
                     </div>
                 </div>
             </div>
-                <Link to="/cadastrocarro" alt='' class="p4-btn-registrar"> Resgistrar </Link>
+                <Link to="/pagecarros" alt='' class="p4-btn-registrar"> Resgistrar </Link>
         </div>
     </section>
 

@@ -13,7 +13,7 @@ export default function index() {
             
             <Link to="/cadastrocarro" className="f3-botao">Cad. veículos</Link>
 
-            <Link to="/landingpage" className="f2-botao62">Voltar</Link>
+            <Link to="/landingpage" className="f2-botao">Voltar</Link>
 
 
             <div className="f1-bts">
@@ -417,7 +417,7 @@ export default function index() {
                 <br/>
                 <b> Ano: </b> 2016
                 <br/>
-                <b> cl: </b> Suv
+                <b> Classe: </b> Suv
                 <br/>
                 <b> Km: </b> 220.000
                 <br/>
