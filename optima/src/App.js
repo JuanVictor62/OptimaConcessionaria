@@ -9,9 +9,7 @@ function App() {
      <Link to='/landingpage'>landingpage</Link>   <br></br>
      <Link to='/login'>login</Link>   <br></br>
      <Link to='/pagecarros'>pagecarros</Link>  <br></br>
-     <Link to='/consulta'>consulta</Link>  <br></br>
      <Link to='/cadastrocarro'>cadastrocarro</Link>   <br></br> 
-     <Link to='/cadastrocliente'>cadastrocliente</Link>   <br></br> 
 
     </div>
   );
