@@ -10,7 +10,7 @@ export default function index() {
                  <img class="logo"  src="../../assets/img/optima white.png" alt=""/>
              </div>
              <div class="p4-bt-voltar">
-                 <Link to="/cadastrocliente" class="p4-btvoltar"> voltar </Link>
+                 <Link to="/pagecarros" class="p4-btvoltar"> voltar </Link>
              </div>
         </div>
 

@@ -11,9 +11,7 @@ export default function index() {
                 <img className="f2-logo62" src="../../assets/img/Logo.svg" alt=''/> 
             </Link>
             
-            <Link to="/cadastrocliente" className="f1-botao">Cadastro</Link>
-
-            <Link to="/consulta" className="f3-botao">Pedidos </Link>
+            <Link to="/cadastrocarro" className="f3-botao">Cad. veículos</Link>
 
             <Link to="/landingpage" className="f2-botao62">Voltar</Link>
 
