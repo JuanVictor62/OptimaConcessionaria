@@ -214,7 +214,7 @@ export default function index() {
                         </div>
                         <div className='f1-r-tpc2'>
                             <h3 className='f1-in-19'>Sobre nós</h3>
-                            <a className='f1-in-20' href="#info"> <p className='f1-in-20'>Informações da empresa </p> </a>
+                        <div className='transi'>    <a className='f1-in-21' href="#info"> <p className='f1-in-20'>Informações da empresa </p> </a> </div>
                             <a className='f1-in-20' href="https://api.whatsapp.com/send?phone=5511988749207"><p className='f1-in-20'>Contato</p></a>
                         </div>
                         <div className='f1-r-tpc3'>
