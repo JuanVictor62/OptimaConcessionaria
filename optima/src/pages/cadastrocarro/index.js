@@ -41,6 +41,11 @@ export default function index() {
                         <input class="p4-input-4"  type="text" />
                     </div>
 
+                    <div> 
+                        <p class="p4-p4"> Classe: </p>
+                        <input class="p4-input-4"  type="text"/>
+                    </div>
+
                 </div>
 
                 <div class="p4-coluna-2">
@@ -48,6 +53,8 @@ export default function index() {
                         <p class="p4-p5"> Valor: </p>
                         <input class="p4-input-5"  type="number" />
                     </div>
+            
+
                     <div> 
                         <p class="p4-p6"> Código do Carro: </p>
                         <input class="p4-input-6"  type="number" />
