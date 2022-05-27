@@ -20,11 +20,11 @@ create table tb_cadastro_veiculo(
     ds_modelo            varchar(50),
     ds_marca             varchar(50),
     vl_valor             decimal(15,2),
-    ds_placa 	 	 varchar(7),
-    dt_anofab     	 year,
+    ds_placa 	 	     varchar(7),
+    dt_anofab        	 year,
     vl_km      	         decimal(15,2),
     nr_codigo            int,
-    ds_classe 		 varchar(15),
+    ds_classe 		     varchar(15),
     img_veiculo          blob
 );
 
