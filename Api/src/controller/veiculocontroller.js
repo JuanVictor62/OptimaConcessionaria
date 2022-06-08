@@ -1,7 +1,7 @@
 import multer from 'multer'
 
 import { Router } from 'express'
-import { inserirImagem, removerVeiculo, inserirVeiculo, listarTodosVeículos, alterarVeiculo, buscarPorNome } from '../repository/veiculoReposity.js';
+import { inserirImagem, removerVeiculo, inserirVeiculo, listarTodosVeículos, alterarVeiculo, buscarPorNome } from '../repository/veiculoRepository.js';
 const server = Router();
 const upload = multer({ dest: 'storage/fotos-carros' });
 

@@ -454,7 +454,7 @@ export default function index() {
             <div className="f1-r-tpc1">
                 <h3 className="f1-in-19">Inicio</h3>
                 <p className="f1-in-20"> 
-                    <Link className="f1-in-20" to="/landingpage" alt=''>
+                    <Link className="f1-in-20" to="/" alt=''>
                         Home 
                     </Link>
                 </p>
@@ -466,7 +466,7 @@ export default function index() {
             </div>
             <div className="f1-r-tpc2">
                 <h3 className="f1-in-19">Sobre nós</h3>
-                <Link className="f1-in-20" to="/landingpage" alt=''> 
+                <Link className="f1-in-20" to="/" alt=''> 
                     <p className="f1-in-20">
                         Informações da empresa 
                     </p> 
