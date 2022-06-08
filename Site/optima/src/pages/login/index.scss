@@ -107,6 +107,8 @@
         padding-left: 1.5em;
         padding-right: 1.5em;
         border-radius: 2em;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
     
     .f2-botao:hover {
