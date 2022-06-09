@@ -3,7 +3,7 @@ import '../commom/commom.css';
 import { Link } from 'react-router-dom';
 import { useState} from 'react'
 import storage from 'local-storage'
-import { cadastrarVeiculo } from '../../api/veiculoAPI';
+import { cadastrarVeiculo, enviarImagemVeiculo} from '../../api/veiculoAPI';
 import {toast } from 'react-toastify';
 
 export default function Index() {
@@ -14,19 +14,26 @@ export default function Index() {
     const [km, setKm]= useState(0);  
     const [codigo, setCodigo]= useState(0);
     const [classe, setClasse]= useState('');
+    const [imagem, setImagem] = useState();
 
     async function salvarClick() {
         try{
             const usuario = storage('usuario-logado').id;
             const novoFilme = await cadastrarVeiculo(modelo, marca, valor, anofab, km, codigo, classe, usuario);
 
-            toast.dark('Filme cadastro com Sucesso');
+            toast.dark('veiculo cadastro com Sucesso');
         } catch(err){
             toast.error(err.message);
         }
-}
+        }
 
+        function escolherImagem(){
+            document.getElementById('imagemCapa').click();
+        }
 
+        function mostrarImagem(){
+            return URL.createObjectURL(imagem); 
+        }
     return(
         <section class="p4-container">
         <div  class="p4-cabeçalho">
@@ -86,9 +93,18 @@ export default function Index() {
                     <div> 
                         <p class="p4-p7"> Foto do Veículo: </p>
                         <div class="p4-edit-img">
-                            <center>
-                            <img class="p4-img-ft"  src="../../assets/img/LogoCamera.png" alt=""/>
-                            </center>
+                            <div className='upload-capa'onClick={escolherImagem } >
+
+                            {!imagem &&
+                                <img src="../public/img/LogoCamera.png" alt="" />
+                            }
+
+                            {imagem &&
+                                <img src= {mostrarImagem()} alt='' />
+                            }
+
+                            <input type='file' id='imagemCapa' onChange={e => setImagem(e.target.files[0])}/>
+                            </div>
                         </div>
                         
                     </div>

@@ -1,5 +1,4 @@
 create database SistemaOptimaFrei;
-
 use SistemaOptimaFrei;
 
 create table tb_funcionario(

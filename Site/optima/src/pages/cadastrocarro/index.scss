@@ -236,6 +236,10 @@
     background: #bfbfbfb8;
     border-radius: 1.4em;
 }
+#imagemCapa{
+    visibility: hidden;
+    position: absolute;
+}
 
 @media(max-width:1680px)
 {

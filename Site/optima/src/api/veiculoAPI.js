@@ -17,3 +17,15 @@ export async function cadastrarVeiculo(modelo, marca, valor, anofab, km, codigo,
     )
     return resposta.data;
 }
+
+export async function enviarImagemVeiculo(id, imagem){
+    const formData = new FormData();
+    formData.append('capa', imagem);
+
+    const resposta = await api.put(`/veiculo/${id}/imagem`, formData, {
+        headers: {
+            "Content-Type": "multipart/form-data"
+        },
+    });
+    return resposta.status;
+}
