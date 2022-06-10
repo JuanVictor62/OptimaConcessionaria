@@ -1,6 +1,6 @@
 import './index.scss';
 import '../commom/commom.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function index() {
     return(
@@ -20,13 +20,6 @@ export default function index() {
                 <div className="f1-bt-1">
                     <p className="f1-bt-1-1"> Classe </p>
                         <img className="f1-bt-1-2" src="../../assets/IMG/icons8-chevron-right-96 1.png" alt=""/>
-                    <div className="f1-bt-aa">
-                        <p className="f1-bt-a"> Suv </p>
-                        <p className="bg"> Esportivo</p>
-                        <p className="bg"> Sedan</p>
-                        <p className="bg"> Compacto</p>
-                    </div>
-
                 </div>
 
                 <div className="f1-bt-2">
