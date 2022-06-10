@@ -412,24 +412,11 @@
     
     .name{
         position: relative;
-        left: 11.5em;
         width: 90px;
         height: 76px;
         margin-top: 7.8em;
         z-index: -1;
-    
-        background-color: #E7E7E7;
-        border-radius: 10px;
-    }
-    
-    .name{
-        position: relative;
-        left: 11.5em;
-        width: 90px;
-        height: 76px;
-        margin-top: 7.8em;
-        z-index: -1;
-    
+        left: 9em;
         background-color: #E7E7E7;
         border-radius: 10px;
     }
@@ -717,6 +704,134 @@
         color: white;
         font-family: 'inter';
     }
+
+    .carros-1
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+    .b-marca {
+        -webkit-transition: all 0.5s ease;
+    }
+    .b-codigo {
+        -webkit-transition: all 0.5s ease; 
+    }
+    .ix-menu {
+        -webkit-transition: all 0.5s ease; 
+    }
+    .name {
+        -webkit-transition: all 0.5s ease; 
+    }
+
+    .carros-1:hover {
+        .b-marca {
+            color: #044886;
+            transition: 0.4s;
+        }
+        .b-codigo {
+            color: #044886;
+            transition: 0.4s;
+        }
+        .ix-menu {
+            transition: 0.8s;
+            transform: scale(1.1);
+        }
+        .name {
+            transition: 0.8s;
+            color: #044886;
+        }
+    }
+ /////////////////////////////////////////////////
+    .carros-2
+    {
+        margin-left: 1em;
+        margin-right: 1em;  
+        display: flex;
+        flex-direction: row;
+    }
+ /////////////////////////////////////////////////
+    .carros-3 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-4 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-5
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-6 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-7
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-8 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-9 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-10 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-11 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+  /////////////////////////////////////////////////
+    .carros-12 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+ 
     
     
     @media (max-width:1440px) {

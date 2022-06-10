@@ -26,7 +26,7 @@ export default function Index() {
 
         setTimeout(() => { 
             navigate('/pagecarros');
-        }, 2000)
+        }, 1500)
 
     } catch (err) {
         ref.current.complete();
@@ -47,7 +47,7 @@ export default function Index() {
                     <img class="f2-logo" src="./assets/img/logo.svg" alt=''/> 
                 </Link>
                 
-                <Link to="/ " class="f2-botao">
+                <Link to="/" class="f2-botao">
                     Voltar
                 </Link>
             </div>

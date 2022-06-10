@@ -13,7 +13,7 @@ export default function index() {
             
             <Link to="/cadastrocarro" className="f3-botao">Cad. veículos</Link>
 
-            <Link to="/landingpage" className="f2-botao">Voltar</Link>
+            <Link to="/" className="f2-botao">Voltar</Link>
 
 
             <div className="f1-bts">
@@ -56,7 +56,7 @@ export default function index() {
 
 <div className="carros-geral">
 
-    <div className="carros">
+    <div className="carros-1">
 
         <div className="name">
             <p className="title-1"> IX 35 </p>
@@ -70,24 +70,24 @@ export default function index() {
             </div>
 
             <div className="card-2-1">
-                <b> Marca: </b> Hyundai
+                <b className='b-marca'> Marca: </b> Hyundai
                 <br/>
-                <b> Ano: </b> 2021
+                <b className='b-marca'> Ano: </b> 2021
                 <br/>
-                <b> Classe: </b> Suv
+                <b className='b-marca'> Classe: </b> Suv
                 <br/>
-                <b> Km: </b> 90.000
+                <b className='b-marca'> Km: </b> 90.000
                 <br/>
-                <b> Valor: </b> R$ 64.999,99
+                <b className='b-marca'> Valor: </b> R$ 64.999,99
                 <br/>
 
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
+                    <p className="card-2-2"> <b className='b-codigo'>Código:</b> 00000 </p>
 
             </div>
         </div>
     </div>
 
-    <div className="carros">
+    <div className="carros-2">
 
         <div className="name">
             <p className="title-2"> HR-V
@@ -118,7 +118,7 @@ export default function index() {
         </div>
     </div>
 
-    <div className="carros">
+    <div className="carros-3">
 
         <div className="name">
             <p className="title-3"> Civic
@@ -149,7 +149,7 @@ export default function index() {
 
    
 
-    <div className="carros">
+    <div className="carros-4">
 
         <div className="name">
             <p className="title-4"> Onix
@@ -164,7 +164,7 @@ export default function index() {
             </div>
 
             <div className="card-2-1">
-                <b> Marca: </b> Chevolet
+                <b> Marca: </b> Chevrolet
                 <br/>
                 <b> Ano: </b> 2019      
                 <br/>
@@ -182,7 +182,7 @@ export default function index() {
 </div>
 
 <div className="carros-geral">
-    <div className="carros">
+    <div className="carros-5">
 
         <div className="name">
             <p className="title-5"> Compass
@@ -212,7 +212,7 @@ export default function index() {
             </div>
         </div>
     </div>
-<div className="carros">
+<div className="carros-6">
 
     <div className="name">
         <p className="title-6"> Cronos
@@ -243,7 +243,7 @@ export default function index() {
     </div>
 </div>
 
-<div className="carros">
+<div className="carros-7">
 
     <div className="name">
         <p className="title-7"> Jetta</p>
@@ -272,7 +272,7 @@ export default function index() {
     </div>
 </div>
 
-<div className="carros">
+<div className="carros-6">
 
     <div className="name">
         <p className="title-8"> Argo
@@ -305,7 +305,7 @@ export default function index() {
 </div>
 
 <div className="carros-geral">
-    <div className="carros">
+    <div className="carros-9">
 
         <div className="name">
             <p className="title-9"> Corolla
@@ -336,7 +336,7 @@ export default function index() {
         </div>
     </div>
 
-    <div className="carros">
+    <div className="carros-10">
 
         <div className="name">
             <p className="title-10"> KÁ
@@ -367,7 +367,7 @@ export default function index() {
         </div>
     </div>
 
-    <div className="carros">
+    <div className="carros-11">
 
         <div className="name">
             <p className="title-11"> Polo
@@ -398,7 +398,7 @@ export default function index() {
         </div>
     </div>
 
-    <div className="carros">
+    <div className="carros-12">
 
         <div className="name">
             <p className="title-12"> CRV
