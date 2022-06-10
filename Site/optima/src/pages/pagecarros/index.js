@@ -18,6 +18,10 @@ export default function index() {
 
             <div className="f1-bts">
                 <div className="f1-bt-1">
+                    <div className='f1-menu-classe'> 
+                        Oiee 
+                    </div>
+
                     <p className="f1-bt-1-1"> Classe </p>
                         <img className="f1-bt-1-2" src="../../assets/IMG/icons8-chevron-right-96 1.png" alt=""/>
                 </div>
