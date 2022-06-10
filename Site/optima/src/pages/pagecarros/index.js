@@ -19,7 +19,10 @@ export default function index() {
             <div className="f1-bts">
                 <div className="f1-bt-1">
                     <div className='f1-menu-classe'> 
-                        Oiee 
+                        <div> SUV </div>
+                        <div> Esportivo </div> 
+                        <div> Compacto </div>
+                        <div> Sedan </div>
                     </div>
 
                     <p className="f1-bt-1-1"> Classe </p>

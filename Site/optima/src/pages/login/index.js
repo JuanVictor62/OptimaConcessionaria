@@ -26,7 +26,7 @@ export default function Index() {
 
         setTimeout(() => { 
             navigate('/pagecarros');
-        }, 1500)
+        }, 2000)
 
     } catch (err) {
         ref.current.complete();
