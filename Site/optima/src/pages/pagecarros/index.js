@@ -6,28 +6,25 @@ export default function index() {
     return(
         <main className="container">
 
-        <div className="f2-cabecalho">
-            <Link to="/landingpage"> 
-                <img className="f2-logo62" src="../../assets/img/Logo.svg" alt=''/> 
-            </Link>
-            
-            <Link to="/cadastrocarro" className="f3-botao">Cad. veículos</Link>
+<div className="f2-cabecalho">
 
-            <Link to="/" className="f2-botao">Voltar</Link>
+<Link to="/landingpage">
+    <img className="f2-logo62" src="../../assets/img/Logo.svg" alt='' />
+</Link>
 
-        </div>
+    <form>
+        <input className="f2-1-1" type="search" placeholder="Buscar" />
+
+        <img className="f2-img" src="../../assets/img/image 25.png" onclick="executar()" alt='' />
+    </form>
+
+    <Link to="/cadastrocarro" className="f3-botao">Cad. veículos</Link>
+
+    <Link to="/" className="f2-botao">Voltar</Link>
+
+</div>
 
         <section className="f2">
-
-            <div className="f2-1">
-                <form>
-                    <input className="f2-1-1" type="search" placeholder="Buscar"/>
-
-                    <img className="f2-img" src="../../assets/img/image 25.png" onclick="executar()" alt=''/>
-                </form>
-
-
-            </div>
 
 <div className="carros-geral">
 
