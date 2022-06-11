@@ -21,6 +21,15 @@
     margin-left: 2em;
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input {
+    font-size: 1em;
+}
+
 .p4-bt-voltar{
     color: rgb(0, 0, 0);
     padding-top: 0.4em;
@@ -171,6 +180,7 @@
     background: #FFFFFF;
     border-radius: 2.1em;
     margin-left: 24em;
+    font-size: 1em;
 }
 
 .p4-btn-registrar {
@@ -216,6 +226,10 @@
     margin-bottom: 0.5em;
 }
 
+.img-upload {
+    z-index: 10;
+}
+
 .p4-input-5{
     width: 24.1em;
     height: 2.8em;
@@ -230,12 +244,22 @@
     border-radius: 5px;
     border: none;
 }
+.p4-input-8{
+    width: 15em;
+    height: 2.8em;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
 .p4-img-ft{ 
     margin-top: 2.5em;
     width: 5.5em;
     height: 4.3em;
 }
 .p4-edit-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     width: 16.6em;
     height: 10em;
@@ -245,14 +269,19 @@
 }
 #imagemCapa{
     visibility: hidden;
-    position: absolute;
-    height: 16.6em;
-    width: 10em;
+    position: relative;
+    border: 1px solid black;
+    height: 10em;
+    width: 17em;
 }
 
 .imagemCapa{
-    height: 250px;
-    width: 200px;
+    position: relative;
+    top: 5.5em;
+    left: 3.5em;
+    height: 140px;
+    width: auto;
+    
 }
 
 @media(max-width:1680px)

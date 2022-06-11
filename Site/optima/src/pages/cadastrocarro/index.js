@@ -105,7 +105,7 @@ export default function Index() {
                             <div className='upload-veiculo'onClick={escolherImagem } >
 
                                 {!imagem &&
-                                    <img src="../public/img/LogoCamera.png" alt="" />
+                                    <img className='img-upload' src="../../public/img/LogoCamera.png" alt="" />
                                 }
 
                                 {imagem &&
@@ -113,7 +113,7 @@ export default function Index() {
                                 }
 
                                 <input type='file' id='imagemCapa' onChange={e => setImagem(e.target.files[0])}/>
-                            </div>
+                            </div> 
                         </div>
                         
                     </div>
@@ -122,6 +122,7 @@ export default function Index() {
                 <button className="p4-btn-registrar" onClick={salvarClick}> Resgistrar </button>
         </div>
     </section>
+    
 
     );
 }
