@@ -10,16 +10,19 @@ export default function Index() {
     const [modelo, setModelo]= useState('');
     const [marca, setMarca]= useState('');
     const [valor, setValor]= useState(0);
+    const [placa, setPlaca] = useState('');
     const [anofab, setAnoFab]= useState(0);
     const [km, setKm]= useState(0);  
     const [codigo, setCodigo]= useState(0);
     const [classe, setClasse]= useState('');
-    const [imagem, setImagem] = useState();
+    const [imagem, setImagem]= useState('');
+
 
     async function salvarClick() {
         try{
             const usuario = storage('usuario-logado').id;
-            const novoFilme = await cadastrarVeiculo(modelo, marca, valor, anofab, km, codigo, classe, usuario);
+            const novoVeiculo = await cadastrarVeiculo(modelo, marca, valor, placa, anofab, km, codigo, classe, usuario);
+            const r = await enviarImagemVeiculo(novoVeiculo.id, imagem);
 
             toast.dark('veiculo cadastro com Sucesso');
         } catch(err){
@@ -90,21 +93,27 @@ export default function Index() {
                         <p class="p4-p6"> Código do Carro: </p>
                         <input class="p4-input-6"  type="number" value={codigo} onChange={e => setCodigo(e.target.value)}/>
                     </div>
+
+                    <div> 
+                        <p class="p4-p8"> Placa: </p>
+                        <input class="p4-input-8"  type="text" value={placa} onChange={e => setPlaca(e.target.value)}/>
+                    </div>
+
                     <div> 
                         <p class="p4-p7"> Foto do Veículo: </p>
                         <div class="p4-edit-img">
-                            <div className='upload-capa'onClick={escolherImagem } >
+                            <div className='upload-veiculo'onClick={escolherImagem } >
 
-                            {!imagem &&
-                                <img src="../public/img/LogoCamera.png" alt="" />
-                            }
+                                {!imagem &&
+                                    <img className='img-upload' src="../../public/img/LogoCamera.png" alt="" />
+                                }
 
-                            {imagem &&
-                                <img src= {mostrarImagem()} alt='' />
-                            }
+                                {imagem &&
+                                    <img className='imagemCapa' src= {mostrarImagem()} alt='' />
+                                }
 
-                            <input type='file' id='imagemCapa' onChange={e => setImagem(e.target.files[0])}/>
-                            </div>
+                                <input type='file' id='imagemCapa' onChange={e => setImagem(e.target.files[0])}/>
+                            </div> 
                         </div>
                         
                     </div>
@@ -113,6 +122,7 @@ export default function Index() {
                 <button className="p4-btn-registrar" onClick={salvarClick}> Resgistrar </button>
         </div>
     </section>
+    
 
     );
 }
