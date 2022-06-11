@@ -755,10 +755,11 @@
 
     .carros-1
     {
-        margin-left: 1em;
+        margin-left: 5em;
         margin-right: 1em;
         display: flex;
         flex-direction: row;
+        width: 25%;
     }
     .b-marca, .b-codigo, .ix-menu, .name, .title-1,.card-2-2 {
         -webkit-transition: all 0.5s ease;

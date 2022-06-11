@@ -18,16 +18,17 @@ export default function index() {
 
             <div className="f1-bts">
                 <div className="f1-bt-1">
-                    <div className='f1-menu-classe'> 
+                    
+
+                    <p className="f1-bt-1-1"> Classe </p>
+                        <img className="f1-bt-1-2" src="../../assets/IMG/icons8-chevron-right-96 1.png" alt=""/>
+                </div>
+                <div className='f1-menu-classe'> 
                         <div> SUV </div>
                         <div> Esportivo </div> 
                         <div> Compacto </div>
                         <div> Sedan </div>
                     </div>
-
-                    <p className="f1-bt-1-1"> Classe </p>
-                        <img className="f1-bt-1-2" src="../../assets/IMG/icons8-chevron-right-96 1.png" alt=""/>
-                </div>
 
                 <div className="f1-bt-2">
                     <p className="f1-bt-2-1"> Marcas</p>
