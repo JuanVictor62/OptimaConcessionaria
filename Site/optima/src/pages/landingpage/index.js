@@ -15,7 +15,7 @@ export default function index() {
 
                     <div className='f1-cab'>
 
-                        <Link to='/landingpage'> 
+                        <Link to='/'> 
                             <img className='f1-log' src="./assets/img/logo.svg" width="180" height="90" alt='' /> 
                         </Link>
 

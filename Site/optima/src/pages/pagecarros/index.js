@@ -15,20 +15,20 @@ export default function index() {
                 <div className='search'>
 
                     <form>
-                        <input className="f2-1-1" type="search" placeholder="Buscar" />
+                        <input className="f2-1-1" type="text" placeholder="Buscar" />
 
                         <img className="f2-img" src="../../assets/img/image 25.png" onclick="executar()" alt='' />
                     </form>
 
                 </div>
 
-                <div className='bots'>
+            
 
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
 
                     <Link to="/" className="f2-botao">Voltar</Link>
 
-                </div>
+            
 
             </div>
 
@@ -513,7 +513,7 @@ export default function index() {
                     </div>
                 </div>
 
-                <div>
+                <div className='f1-r-c4-1'>
                     <div className="f1-r-c4">
                         <img className="f1-r-img-4" src="../../assets/img/icons8-whatsapp-192.png" alt='' />
                         <p className="f1-r-in-21">11 59746879</p>

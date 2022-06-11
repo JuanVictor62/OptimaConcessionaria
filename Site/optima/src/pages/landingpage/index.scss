@@ -172,7 +172,6 @@
 
     .aa {
         margin-top: 37em;
-        margin-left: -95.5em;
     }
 
     .f1-bt-3-img {
@@ -749,7 +748,6 @@
         }
 
         .f1-bot {
-            display: block;
         }
 
         .f1-cab {
@@ -1514,14 +1512,25 @@
             width: 115.5vh;
         }
 
-        .f1-bt-3-ctt {
-            margin-left: 5em;
+        .f1-bt-2 {
+            position: relative;
         }
+
+        .ppp {
+            visibility: visible;
+            opacity: 1;
+            z-index: 40;
+        }
+
+        .f1-bt-3-ctt {
+            position: relative;
+            right: 93em;
+        }        
 
         .f1-bt-3-img {
             position: relative;
-            left: 9.5em;
             top: 2em;
+            left: -88.5em;
         }
 
         .f1-info2 {

@@ -7,9 +7,12 @@
         justify-content: space-between;
         height: 4em;
         z-index: -1;
+        background-color: black;
     }
 
     .search{
+        position: relative;
+        left: 14em;
 
         display: flex;
         justify-content: center;
@@ -34,19 +37,58 @@
     }
     
     .f2-botao{
-        margin-top: 1em;
-        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        right: 8em;
+        top: 1em;
     
         text-decoration: none;
         font-family: 'k2d';
         color: #000000;
         background-color: #ffffff;
-        padding: 0.3em;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
+        width: 100px;
+        height: 33px;
         border-radius: 2em;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
+    }
+
+    .f2-botao:hover {
+        color: #044886;
+        -webkit-transform:scale(1.1);
+        transform:scale(1.1);
+        transition: all 0.5s ease;
+    }
+
+    .f3-botao:hover {
+        color: #044886;
+        -webkit-transform:scale(1.1);
+        transform:scale(1.1);
+        transition: all 0.5s ease;
+    }
+    
+    .f3-botao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        left: 13em;
+        top: 1em;
+        text-align: center;
+        
+        text-decoration: none;
+        font-family: 'k2d';
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 2em;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        width: 100px;
+        height: 33px;
     }
     
     
@@ -61,6 +103,7 @@
         background: #fff;
         border-radius: 6px;
         border: none;
+        padding-right: 5em;
     }
     
     .f2-img {
@@ -251,10 +294,7 @@
     
     }
     
-    .f1-r-tpc3{
-        margin-right: 25em;
     
-    }
     
     .f1-in-19{
         margin-bottom: 1em;
@@ -311,8 +351,6 @@
 
     .carro-1
     {
-        margin-left: 1em;
-        margin-right: 1em;
         display: flex;
         flex-direction: row;
     }
@@ -364,7 +402,7 @@
         }
     
         .f2-1-1 {
-            margin-left: 2.5em;
+            margin-left: 6em;
         }
     
         .f3-botao {
@@ -396,15 +434,9 @@
         width: 10px;
     }
 
-    @media(max-width:1920px) 
-    {
-        .carros-geral {
-            margin-left: 3em;
-        }
-
-        .carros {
-            margin-left: 1em;
-            margin-right: 1em;
+    @media(max-width:1920px){
+        .carro-1 {
+            margin-left: 4.4em;
         }
 
         .f1-r-d1 {
@@ -418,6 +450,16 @@
         .f1-r-tpc2 {
             margin-left: 2em;
             margin-right: 2em;
+        }
+
+        .f1-r-c4-1 {
+            position: relative;
+            left: 30em;
+        }
+
+        .f2-botao {
+            position: relative;
+            right: 11em;
         }
 
         .f1-r-in-23 {
