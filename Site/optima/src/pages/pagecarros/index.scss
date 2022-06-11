@@ -71,6 +71,8 @@
     }
 
 
+    /////// CABECALHO //////////
+
     .f2-cabecalho{
         display: flex;
         justify-content: space-between;
@@ -101,143 +103,6 @@
         border-radius: 2em;
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
-    }
-    
-    .f1-botao{
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 70em;
-    
-        text-decoration: none;
-        font-family: 'k2d';
-        color: #000000;
-        background-color: #ffffff;
-        padding: 0.3em;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-        border-radius: 2em;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .f1-botao:hover {
-        color: #044886;
-        -webkit-transform:scale(1.1);
-        transform:scale(1.1);
-        transition: all 0.5s ease;
-    }
-    
-    .f2-botao:hover {
-        color: #044886;
-        -webkit-transform:scale(1.1);
-        transform:scale(1.1);
-        transition: all 0.5s ease;
-    }
-    
-    .f3-botao:hover {
-        color: #044886;
-        -webkit-transform:scale(1.1);
-        transform:scale(1.1);
-        transition: all 0.5s ease;
-    }
-    
-    .f3-botao{
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 75em;
-    
-        text-decoration: none;
-        font-family: 'k2d';
-        color: #000000;
-        background-color: #ffffff;
-        padding: 0.3em;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-        border-radius: 2em;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    
-    
-    .f1-bt-1-2 {
-        position: relative;
-        top: 0.6em;
-        right: 0.2em;
-        height: 2em;
-        width: auto;
-    }
-    
-    .f1-bt-2 {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        width: 121px;
-        height: 49px;
-        left: 750px;
-        top: 8px;
-    
-        background: #FFFFFF;
-        border-radius: 20px;
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .f1-bt-2-1 {
-        position: relative;
-        right: 0.3em;
-        font-family: 'K2D';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 26px;
-        margin-top: 0.5em;
-        margin-left: 0.8em;
-        margin-right: 0.3em;
-    
-    }
-    
-    .f1-bt-2-2 {
-        position: relative;
-        right: 0.4em;
-        margin-top: 0.5em;
-        height: 2em;
-        width: auto;
-    }
-    
-    .f1-bt-3 {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        width: 101px;
-        height: 49px;
-        left: 902px;
-        top: 8px;
-        
-        background: #FFFFFF;
-        border-radius: 20px;
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .f1-bt-3-1 {
-        font-family: 'K2D';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 26px;
-        margin-top: 0.5em;
-        margin-left: 0.8em;
-        margin-right: 0.3em;
-    }
-    
-    .f1-bt-3-2 {
-        position: relative;
-        top: 0.6em;
-        height: 2em;
-        width: auto;
     }
     
     .f2-1 {
@@ -282,12 +147,14 @@
     
     .carros-geral {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
     }
     
-    .card-1{
+    .card-c1{
+        position: relative;
+        top: 10em;
         margin-left: -5em;
-        margin-top: 10em;
+        margin-bottom: 7em;
         width: 378px;
         height: 408px;
         
@@ -295,7 +162,7 @@
         border-radius: 20px;
     }
     
-    .car-1{
+    .car-c1{
         width: 378px;
         height: 217px;
         padding-right: 5em;
@@ -305,167 +172,19 @@
         -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
-    .HRV-2{
-        width: 410px;
-        height: 237px;
-        margin-left: -0.8em;
-        margin-top: -2em;
-    }
-    .car-2{
-        width: 378px;
-        height: 217px;  
-        background: #C4C4C4;
-        border-radius: 20px; 
     
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .car-3{
-        width: 378px;
-        height: 230px;
-    
-        padding-left: 2.7em;
-        background: #C4C4C4;
-        border-radius: 20px; 
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .Jeep-5{
-        width: 378px;
-        height: 240px;
-    }
-    
-    .car-4{
-        width: 378px;
-        height: 217px;
-    
-        padding-left: 1em;
-        background: #C4C4C4;
-        border-radius: 20px; 
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .car-5{
-        width: 378px;
-        height: 217px;
-        padding-top: -4em;
-        background: #C4C4C4;
-        border-radius: 20px; 
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .car-6{
-        width: 378px;
-        height: 217px;
-    
-        padding-left: 1em;
-        background: #C4C4C4;
-        border-radius: 20px; 
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .car-7{
-        width: 378px;
-        height: 217px;
-        
-        padding-top: 2em;
-        padding-left: 2.3em;
-        background: #C4C4C4;
-        border-radius: 20px; 
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .car-8{
-        width: 378px;
-        height: 217px;
-    
-        padding-left: 2.7em;
-        background: #C4C4C4;
-        border-radius: 20px; 
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .corola-9{
-        width: 360px;
-        height: 240px; 
-        margin-top: -1.4em;
-    }
-    .car-9{
-        width: 378px;
-        height: 217px;
-        background: #C4C4C4;
-        border-radius: 20px; 
-        padding-top: 1em;
-        padding-left: 1em;
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .ká-10{
-        width: 380px;
-        height: 240px;
-        margin-top: -2em;
-    }
-    .car-10{
-        width: 378px;
-        height: 217px;
-        background: #C4C4C4;
-        border-radius: 20px; 
-        padding-top: 0.5em;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .polo-11{
-        width: 340px;
-        height: 190px;
-    }
-    .car-11{
-        width: 378px;
-        height: 217px;
-        background: #C4C4C4;
-        border-radius: 20px; 
-        padding-top: 1em;
-        padding-left: 1em;
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    .CRV-12{
-        width: 360px;
-        height: 260px; 
-        margin-top: -1em;
-    }
-    .car-12{
-        width: 378px;
-        height: 217px;
-        background: #C4C4C4;
-        border-radius: 20px; 
-        padding-left: 0.5em;
-    
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-    
-    .name{
+    .name-c1{
         position: relative;
         width: 90px;
+        top: 7em;
         height: 76px;
-        margin-top: 7.8em;
         z-index: -1;
         left: 9em;
         background-color: #E7E7E7;
         border-radius: 10px;
     }
     
-    .title-1{
+    .title-c1{
         display: flex;
         justify-content: left;
         align-items: center;
@@ -476,119 +195,21 @@
         top: 4px;
         left: 13px;
     }
-    .title-2{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 4em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-3{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-4{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 4em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-5{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 4em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-6{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-7{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-8{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-9{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-10{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-11{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
-    .title-12{
-        font-family: 'inter';
-        font-size: 1.5em;
-        width: 2em;
-        margin-left: 0.7em;
-        margin-top: 0.2em;
-    }
     
-    
-    
-    .card-2-1 {
+    .card-2-c1 {
         font-family: 'inter';
         line-height: 2em;
         margin-left:1em ;
     }
     
-    .c2-2-1 {
-        position: relative;
-        bottom: 4em;
-    }
-    
-    .card-2-2 {
+    .card-3-c1 {
         margin-left: 14em;
     }
+    
 
-    .card-2-2-1 {
-        position: relative;
-        left: 14em;
-        bottom: 1em;
-    }
-    
-    .c2-1 {
-        position: relative;
-        left: 3.49em;
-        bottom: 2em;
-    }
-    
-    .c2-2 {
-        position: relative;
-        left: 2.5em;
-        bottom: 5.8em;
-    }
-    
+/////////////// RODAPE ////////////////
+
+
     .f1-rodape {
         display: flex;
         flex-direction: row;
@@ -753,126 +374,38 @@
         font-family: 'inter';
     }
 
-    .carros-1
+    .carro-1
     {
         margin-left: 1em;
         margin-right: 1em;
         display: flex;
         flex-direction: row;
     }
-    .b-marca, .b-codigo, .ix-menu, .name, .title-1,.card-2-2 {
+    .b-marca, .b-codigo-c1, .ix-img, .name-c1, .title-c1,.card-3-c1 {
         -webkit-transition: all 0.5s ease;
     }
 
-    .carros-1:hover {
+    .carro-1:hover {
         .b-marca {
             color: #044886;
             transition: 0.4s;
         }
-        .b-codigo {
+        .b-codigo-c1 {
             color: #044886;
             transition: 0.4s;
         }
-        .ix-menu {
+        .ix-img {
             transition: 0.4s;
             transform: scale(1.05);
         }
-        .title-1 {
+        .title-c1 {
             font-size: 1.6em;
             transition: 0.4s;
             font-weight: bold;
         }
     }
- /////////////////////////////////////////////////
-    .carros-2
-    {
-        margin-left: 1em;
-        margin-right: 1em;  
-        display: flex;
-        flex-direction: row;
-    }
- /////////////////////////////////////////////////
-    .carros-3 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-4 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-5
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-6 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-7
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-8 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-9 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-10 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-11 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-  /////////////////////////////////////////////////
-    .carros-12 
-    {
-        margin-left: 1em;
-        margin-right: 1em;
-        display: flex;
-        flex-direction: row;
-    }
  
-    
+//////////////////////////////////////////////////////////////    
     
     @media (max-width:1440px) {
     
@@ -912,7 +445,7 @@
             display: none;
         }
     
-        .card-1 {
+        .card-c1 {
             margin-left: -1em;
         }
     
@@ -958,7 +491,7 @@
             right: 7em;
         }
 
-        .card-2-2-1 {
+        .card-3-c1-1 {
             position: relative;
             left: 14em;
             bottom: 1em;

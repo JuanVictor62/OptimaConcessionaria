@@ -17,7 +17,7 @@ export async function inserirImagem(imagem, id) {
     const comando =
         `UPDATE tb_veiculo
 	         SET img_veiculo       = ?
-         WHERE id_cadastro_veiculo = ? `
+         WHERE id_veiculo = ? `
 
     const [resposta] = await con.query(comando, [imagem, id])
     return resposta.affectedRows;

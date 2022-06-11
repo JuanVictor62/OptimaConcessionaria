@@ -15,32 +15,6 @@ export default function index() {
 
             <Link to="/" className="f2-botao">Voltar</Link>
 
-
-            <div className="f1-bts">
-                <div className="f1-bt-1">
-                    
-
-                    <p className="f1-bt-1-1"> Classe </p>
-                        <img className="f1-bt-1-2" src="../../assets/IMG/icons8-chevron-right-96 1.png" alt=""/>
-                </div>
-                <div className='f1-menu-classe'> 
-                        <div> SUV </div>
-                        <div> Esportivo </div> 
-                        <div> Compacto </div>
-                        <div> Sedan </div>
-                    </div>
-
-                <div className="f1-bt-2">
-                    <p className="f1-bt-2-1"> Marcas</p>
-                    <img className="f1-bt-2-2" src="../../assets/img/icons8-carro-64.png" alt=''/>
-                </div>
-
-                <div className="f1-bt-3">
-                    <p className="f1-bt-3-1"> Ano </p>
-                    <img className="f1-bt-3-2" src="../../assets/img/icons8-calendário-96 1.png" alt=''/>
-                </div>
-            </div>
-
         </div>
 
         <section className="f2">
@@ -57,20 +31,20 @@ export default function index() {
 
 <div className="carros-geral">
 
-    <div className="carros-1">
+    <div className="carro-1">
 
-        <div className="name">
-            <p className="title-1"> IX 35 </p>
+        <div className="name-c1">
+            <p className="title-c1"> IX 35 </p>
         </div>
 
-        <div className="card-1">
+        <div className="card-c1">
 
-            <div className="car-1">
-                <img className="ix-menu" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+            <div className="car-c1">
+                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
 
             </div>
 
-            <div className="card-2-1">
+            <div className="card-2-c1">
                 <b className='b-marca'> Marca: </b> Hyundai
                 <br/>
                 <b className='b-marca'> Ano: </b> 2021
@@ -82,354 +56,398 @@ export default function index() {
                 <b className='b-marca'> Valor: </b> R$ 64.999,99
                 <br/>
 
-                    <p className="card-2-2"> <b className='b-codigo'>Código:</b> 00000 </p>
+                    <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
 
             </div>
         </div>
     </div>
 
-    <div className="carros-2">
 
-        <div className="name">
-            <p className="title-2"> HR-V
-            </p>
-        </div>
 
-        <div className="card-1">
 
-            <div className="car-2">
-                <img className="HRV-2" src="../../assets/img/HRV.com.png" alt=""/>
 
-            </div>
+    <div className="carro-1">
 
-            <div className="card-2-1">
-                <b> Marca: </b> Honda
-                <br/>
-                <b> Ano: </b> 2017
-                <br/>
-                <b> Classe: </b> 
-                <br/>
-                <b> Km: </b> 290.000
-                <br/>
-                <b> Valor: </b> R$ 120.000,00
-                <br/>
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
-
-            </div>
-        </div>
-    </div>
-
-    <div className="carros-3">
-
-        <div className="name">
-            <p className="title-3"> Civic
-            </p>
-        </div>
-
-        <div className="card-1">
-
-            <div className="car-3">
-                <img src="../../assets/img/CIVIC 2021 PNG 1.png" alt=""/>
-
-            </div>
-
-            <div className="card-2-1">
-                <b> Marca: </b> Honda 
-                <br/>
-                <b> Ano: </b> 2021
-                <br/>
-                <b> Classe: </b> Esportivo
-                <br/>
-                <b> Km: </b> 120.000
-                <br/>
-                <b> Valor: </b> R$ 92.999,00
-                    <p className="card-2-2-1"> <b>Código:</b> 00000 </p>
-            </div>
-        </div>
-    </div>
-
-   
-
-    <div className="carros-4">
-
-        <div className="name">
-            <p className="title-4"> Onix
-            </p>
-        </div>
-
-        <div className="card-1">
-
-            <div className="car-4">
-                <img src="../../assets/img/Onix 2019 PNG 1.png" alt=""/>
-
-            </div>
-
-            <div className="card-2-1">
-                <b> Marca: </b> Chevrolet
-                <br/>
-                <b> Ano: </b> 2019      
-                <br/>
-                <b> Classe: </b> Compacto
-                <br/>
-                <b> Km: </b> 170.000
-                <br/>
-                <b> Valor: </b> R$ 54.999,99
-                <br/>
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
-
-            </div>
-        </div>
-    </div>
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
 </div>
 
-<div className="carros-geral">
-    <div className="carros-5">
+<div className="card-c1">
 
-        <div className="name">
-            <p className="title-5"> Compass
-            </p>
-        </div>
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
 
-        <div className="card-1">
-
-            <div className="car-5">
-                <img className="Jeep-5" src="../../assets/img/Renagade.com.png" alt=""/>
-
-            </div>
-
-            <div className="card-2-1">
-                <b> Marca: </b> JEEP
-                <br/>
-                <b> Ano: </b> 2017
-                <br/>
-                <b> Classe: </b> Suv
-                <br/>
-                <b> Km: </b> 70.000
-                <br/>
-                <b> Valor: </b> R$ 139.999,99
-                <br/>
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
-
-            </div>
-        </div>
-    </div>
-<div className="carros-6">
-
-    <div className="name">
-        <p className="title-6"> Cronos
-        </p>
     </div>
 
-    <div className="card-1">
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
 
-        <div className="car-6">
-            <img src="../../assets/img/Fiat Cronos 1.png" alt=""/>
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
 
-        </div>
-
-        <div className="card-2-1">
-            <b> Marca: </b> FIat
-                <br/>
-            <b> Ano: </b> 2021
-                <br/>
-            <b> Classe: </b> Sedan  
-                <br/>
-            <b> Km: </b> 30.000
-                <br/>
-            <b> Valor: </b> R$ 89.999,99
-                <br/>
-                <p className="card-2-2"> Código: 00000 </p>
-
-        </div>
     </div>
 </div>
+</div>
+    
 
-<div className="carros-7">
 
-    <div className="name">
-        <p className="title-7"> Jetta</p>
-    </div>
 
-    <div className="card-1">
+<div className="carro-1">
 
-        <div className="car-7">
-            <img src="../../assets/img/jetta 2021.png" alt=""/>
-        </div>
-
-        <div className="card-2-1">
-            <b> Marca: </b> Volkswagen
-                <br/>
-            <b> Ano: </b> 2019
-                <br/>
-            <b> Classe: </b> Sedan
-                <br/>
-            <b> Km: </b> 70.000
-                <br/>
-            <b> Valor: </b> R$ 78.999,99
-                <br/>
-                <p className="card-2-2"> <b>Código:</b> 00000 </p>
-
-        </div>
-    </div>
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
 </div>
 
-<div className="carros-6">
+<div className="card-c1">
 
-    <div className="name">
-        <p className="title-8"> Argo
-        </p>
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
     </div>
 
-    <div className="card-1">
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
 
-        <div className="car-8">
-            <img src="../../assets/img/ARGO.png" alt=""/>
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
 
-        </div>
-
-        <div className="card-2-1">
-            <b> Marca: </b> Fiat
-                <br/>
-            <b> Ano: </b> 2020
-                <br/>
-            <b> Classe: </b> Compacto
-                <br/>
-            <b> Km: </b> 90.000
-                <br/>
-            <b> Valor: </b> R$ 67.999,99
-                <br/>
-                <p className="card-2-2"> <b>Código:</b> 00000 </p>
-
-        </div>
     </div>
 </div>
 </div>
 
-<div className="carros-geral">
-    <div className="carros-9">
 
-        <div className="name">
-            <p className="title-9"> Corolla
-            </p>
-        </div>
 
-        <div className="card-1">
 
-            <div className="car-9">
-                <img className="corola-9" src="../../assets/img/COROLAPRETO.com.png" alt=""/>
 
-            </div>
+<div className="carro-1">
 
-            <div className="card-2-1">
-                <b> Marca: </b> Toyota
-                <br/>
-                <b> Ano: </b> 2021
-                <br/>
-                <b> Classe: </b> Sedan
-                <br/>
-                <b> Km: </b> 115.000
-                <br/>
-                <b> Valor: </b> R$ 72.999,99
-                <br/>
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
 
-            </div>
-        </div>
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
     </div>
 
-    <div className="carros-10">
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
 
-        <div className="name">
-            <p className="title-10"> KÁ
-            </p>
-        </div>
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
 
-        <div className="card-1">
+    </div>
+</div>
+</div>
 
-            <div className="car-10">
-                <img className="ká-10" src="../../assets/img/FORD KA.com.png" alt=""/>
 
-            </div>
 
-            <div className="card-2-1">
-                <b> Marca: </b> Ford
-                <br/>
-                <b> Ano: </b> 2020
-                <br/>
-                <b> Classe: </b> Compacto
-                <br/>
-                <b> Km: </b> 160.000
-                <br/>
-                <b> Valor: </b> R$ 52.999,99
-                <br/>
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
 
-            </div>
-        </div>
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
     </div>
 
-    <div className="carros-11">
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
 
-        <div className="name">
-            <p className="title-11"> Polo
-            </p>
-        </div>
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
 
-        <div className="card-1">
+    </div>
+</div>
+</div>
 
-            <div className="car-11">
-                <img className="polo-11" src="../../assets/img/POLO.com.png" alt=""/>
 
-            </div>
 
-            <div className="card-2-1">
-                <b> Marca: </b> VolKSwagen
-                <br/>
-                <b> Ano: </b> 2021
-                <br/>
-                <b> Classe: </b> Compacto
-                <br/>
-                <b> Km: </b> 90.000
-                <br/>
-                <b> Valor: </b> R$ 64.999,99
-                <br/>
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
 
-            </div>
-        </div>
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
     </div>
 
-    <div className="carros-12">
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
 
-        <div className="name">
-            <p className="title-12"> CRV
-            </p>
-        </div>
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
 
-        <div className="card-1">
-
-            <div className="car-12">
-                <img className="CRV-12" src="../../assets/img/CRVV.com.png" alt=""/>
-
-            </div>
-
-            <div className="card-2-1">
-                <b> Marca: </b> Honda
-                <br/>
-                <b> Ano: </b> 2016
-                <br/>
-                <b> Classe: </b> Suv
-                <br/>
-                <b> Km: </b> 220.000
-                <br/>
-                <b> Valor: </b> R$ 84.999,99
-                <br/>
-                    <p className="card-2-2"> <b>Código:</b> 00000 </p>
-
-            </div>
-        </div>
     </div>
+</div>
+</div>
+
+
+
+
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
     </div>
+
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
+
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
+    </div>
+
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
+
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
+    </div>
+
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
+
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
+    </div>
+
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
+
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
+    </div>
+
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
+
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<div className="carro-1">
+
+<div className="name-c1">
+    <p className="title-c1"> IX 35 </p>
+</div>
+
+<div className="card-c1">
+
+    <div className="car-c1">
+        <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
+
+    </div>
+
+    <div className="card-2-c1">
+        <b className='b-marca'> Marca: </b> Hyundai
+        <br/>
+        <b className='b-marca'> Ano: </b> 2021
+        <br/>
+        <b className='b-marca'> Classe: </b> Suv
+        <br/>
+        <b className='b-marca'> Km: </b> 90.000
+        <br/>
+        <b className='b-marca'> Valor: </b> R$ 64.999,99
+        <br/>
+
+            <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
+
+    </div>
+</div>
+</div>
+
+    
+</div>
+
+
+
 </section>
 
 <footer className="f1-rodape">

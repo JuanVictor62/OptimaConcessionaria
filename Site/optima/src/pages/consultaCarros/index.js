@@ -40,14 +40,10 @@ export default function index() {
         <div className="name">
             <p className="title-1"> IX 35 </p>
         </div>
-
         <div className="card-1">
-
             <div className="car-1">
                 <img className="ix-menu" src="../../assets/img/ix35 2021 png 1.png" alt=""/>
-
             </div>
-
             <div className="card-2-1">
                 <b className='b-marca'> Marca: </b> Hyundai
                 <br/>
@@ -59,8 +55,7 @@ export default function index() {
                 <br/>
                 <b className='b-marca'> Valor: </b> R$ 64.999,99
                 <br/>
-
-                    <p className="card-2-2"> <b className='b-codigo'>Código:</b> 00000 </p>
+                <p className="card-2-2"> <b className='b-codigo'>Código:</b> 00000 </p>
 
             </div>
         </div>
