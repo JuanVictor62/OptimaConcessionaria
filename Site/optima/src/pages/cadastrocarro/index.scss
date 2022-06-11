@@ -205,10 +205,17 @@
     margin-bottom: 0.5em;
 }
 .p4-p7{
+    margin-top: -2em;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.p4-p8{
     margin-top: -7em;
     font-size: 1.2em;
     margin-bottom: 0.5em;
 }
+
 .p4-input-5{
     width: 24.1em;
     height: 2.8em;
@@ -234,11 +241,18 @@
     height: 10em;
 
     background: #bfbfbfb8;
-    border-radius: 1.4em;
+    border-radius: 1em;
 }
 #imagemCapa{
     visibility: hidden;
     position: absolute;
+    height: 16.6em;
+    width: 10em;
+}
+
+.imagemCapa{
+    height: 250px;
+    width: 200px;
 }
 
 @media(max-width:1680px)
