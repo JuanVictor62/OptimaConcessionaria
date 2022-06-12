@@ -4,17 +4,11 @@ import {Link} from 'react-router-dom';
 
 
 export default function index() {
-
     return (
-
         <main className='landing-page'>
-
             <div id="home" className='f1-container'>
-
                 <section className="f1">
-
                     <div className='f1-cab'>
-
                         <Link to='/'> 
                             <img className='f1-log' src="./assets/img/logo.svg" width="180" height="90" alt='' /> 
                         </Link>
@@ -22,7 +16,6 @@ export default function index() {
                         <div className='f1-bot'>
                             <Link to='/login' className='f1-bt-2'>Login</Link>
                         </div>
-
                     </div>
 
                     <div className='f1-text'> 

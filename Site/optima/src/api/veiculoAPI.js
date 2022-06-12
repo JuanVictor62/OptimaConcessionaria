@@ -32,8 +32,10 @@ export async function enviarImagemVeiculo(id, imagem){
 }
 
 
-export async function alterarVeiculo(modelo, marca, valor,placa, anofab, km, codigo, classe, id){
+
+export async function alterarVeiculo(id, modelo, marca, valor,placa, anofab, km, codigo, classe,){
     const resposta = await api.put(`/veiculo`, {
+        id:     id,
         modelo: modelo,
         marca: marca,
         valor: valor,
@@ -41,9 +43,20 @@ export async function alterarVeiculo(modelo, marca, valor,placa, anofab, km, cod
         anofab: anofab,
         km: km,
         codigo: codigo,
-        classe: classe,
-        id:     id
+        classe: classe
     }
     )
+    return resposta.data;
+}
+
+export async function listarTodos(){
+    const resposta = await api.get('/veiculo')
+    return resposta.data;
+
+}
+
+
+export async function buscarPorNome(nome){
+    const resposta = await api.get(`/veiculo/busca?nome=${nome}`)
     return resposta.data;
 }
