@@ -1,13 +1,26 @@
 import './index.scss';
 import '../commom/commom.css';
 import { Link } from 'react-router-dom';
+import {listarTodos, buscarPorNome } from '../../api/veiculoAPI'
+import { useEffect, useState } from 'react';
 
 export default function index() {
+    const [veiculos, setVeiculos] = useState([]);
+
+    async function carregarVeiculos(){
+        const resp = await listarTodos();
+        console.log(resp);
+        return resp; 
+    }
+
+    useEffect(()  => {
+        carregarVeiculos();
+    }, [])
+
+
     return (
         <main className="container">
-
             <div className="f2-cabecalho">
-
                 <Link to="/landingpage">
                     <img className="f2-logo62" src="../../assets/img/Logo.svg" alt='' />
                 </Link>
@@ -19,10 +32,7 @@ export default function index() {
 
                         <img className="f2-img" src="../../assets/img/image 25.png" onclick="executar()" alt='' />
                     </form>
-
                 </div>
-
-            
 
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
 

@@ -1,10 +1,10 @@
 import './index.scss'
 import '../commom/commom.css'
+import Cabecalho from '../../components/cabecalho'
 import storage from 'local-storage'
 import LoadingBar from 'react-top-loading-bar'
 import { login } from '../../api/usuarioAPI'
 import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import { useState, useRef } from 'react'
 
 export default function Index() {
@@ -42,16 +42,7 @@ export default function Index() {
     return (
         <main class="f2-login">
             <LoadingBar color='#f11946' ref={ref} />
-            <div class="f2-cabecalho">
-                <Link to="/landingpage"> 
-                    <img class="f2-logo" src="./assets/img/logo.svg" alt=''/> 
-                </Link>
-                
-                <Link to="/" class="f2-botao">
-                    Voltar
-                </Link>
-            </div>
-
+            <Cabecalho />
             <div class="f2-fundo"> 
                 <div class="f2-painellogin">
                     <img class="f2-icon" src="../../assets/img/icon-usuario.png" alt=''/>

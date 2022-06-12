@@ -1,36 +1,4 @@
 .f2-login{
-    .f2-cabecalho{
-        display: flex;
-        justify-content: space-between;
-    
-        background-image: url(../../../public/assets/img/ImgFundo.png);
-        height: 5em;
-    }
-    
-    .f2-logo{
-        width: 8.5em;
-        height: 8em;
-        margin-left: 2em;
-        margin-top: -1em;
-    }
-    
-    .f2-botao{
-        margin-top: 1.5em;
-        margin-bottom: 1em;
-        margin-right: 3em;
-        height: 2em;
-        text-decoration: none;
-        font-family: 'inter';
-        color: #000000;
-        background-color: #ffffff;
-        padding: 0.3em;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-        border-radius: 2em;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
-
     /* Fundo Login*/
 
     .f2-fundo {

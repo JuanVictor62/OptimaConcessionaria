@@ -30,3 +30,16 @@ export async function enviarImagemVeiculo(id, imagem){
     });
     return resposta.status;
 }
+
+
+export async function listarTodos(){
+    const resposta = await api.get('/veiculo')
+    return resposta.data;
+
+}
+
+``
+export async function buscarPorNome(nome){
+    const resposta = await api.get(`/veiculo/busca?nome=${nome}`)
+    return resposta.data;
+}
