@@ -13,7 +13,7 @@ export async function cadastrarVeiculo(modelo, marca, valor,placa, anofab, km, c
         anofab: anofab,
         km: km,
         codigo: codigo,
-        classe: classe,
+        classe: classe
     }
     )
     return resposta.data;
