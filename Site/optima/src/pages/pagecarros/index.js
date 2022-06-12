@@ -50,7 +50,11 @@ export default function index() {
             {veiculos.map(iten => 
                  
                     <div className="carro-1">
-                        <img className='' src="../../assets/img/logo-lixeira.png"  alt='' /> 
+                        
+                        <img className='icon-lixeira' src="../../assets/img/logo-lixeira.png"  alt='' />
+
+                        <img className='icon-edit' src="../../assets/img/1200px-Feedbin-Icon-home-edit.svg.png"  alt='' /> 
+
                             <div className="name-c1">
                             
                             <p className='title-c1'> {iten.nome} </p>

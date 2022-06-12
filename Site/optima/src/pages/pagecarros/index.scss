@@ -163,7 +163,7 @@
         align-items: center;
 
         font-family: 'inter';
-        font-size: 1.5em;
+        font-size: 1.4em;
         position: relative;
         top: 4px;
         left: 13px;
@@ -367,10 +367,38 @@
             transform: scale(1.05);
         }
         .title-c1 {
-            font-size: 1.6em;
+            font-size: 1.4em;
             transition: 0.4s;
             font-weight: bold;
         }
+
+        .icon-lixeira, .icon-edit {
+            visibility: visible;
+        }
+
+        
+    }
+
+    .icon-lixeira {
+        visibility: hidden;
+
+        height: 1.5em;
+        width: auto;
+        position: relative;
+        left: 18em;
+        top: 7.8em;
+        cursor: pointer;
+    }
+
+    .icon-edit {
+        visibility: hidden;
+
+        height: 1.5em;
+        width: auto;
+        position: relative;
+        left: 19em;
+        top: 7.8em;
+        cursor: pointer;
     }
  
 //////////////////////////////////////////////////////////////    
@@ -445,7 +473,8 @@
             justify-content: center;
             align-items:stretch;
             height: 11%;
-            width: 10em;
+            width:max-content;
+            word-spacing: 0;
         }
 
         .title-c1 {

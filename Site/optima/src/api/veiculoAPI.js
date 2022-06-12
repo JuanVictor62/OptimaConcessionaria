@@ -33,7 +33,7 @@ export async function enviarImagemVeiculo(id, imagem){
 
 
 
-export async function alterarVeiculo(id, modelo, marca, valor,placa, anofab, km, codigo, classe,){
+export async function alterarVeiculo(id, modelo, marca, valor,placa, anofab, km, codigo, classe){
     const resposta = await api.put(`/veiculo`, {
         id:     id,
         modelo: modelo,
