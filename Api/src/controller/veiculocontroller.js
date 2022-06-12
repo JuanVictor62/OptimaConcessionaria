@@ -1,7 +1,7 @@
 import multer from 'multer'
 
 import { Router } from 'express'
-import { inserirImagem, removerVeiculo, inserirVeiculo, listarTodosVeículos, alterarVeiculo, buscarPorNome } from '../repository/veiculoRepository.js';
+import { inserirImagem, removerVeiculo, inserirVeiculo, listarTodosVeículos, alterarVeiculo, buscarPorNome, BuscarPorID } from '../repository/veiculoRepository.js';
 const server = Router();
 const upload = multer({ dest: 'storage/fotos-carros' });
 
@@ -40,6 +40,9 @@ server.post('/veiculo', async (req, resp) => {
 //Inserir Imagem 
 server.put('/veiculo/:id/capa', upload.single('capa'), async (req, resp) => {
     try {
+        if (!req.file)
+            throw new Error('A imagem não pode ser salva!')
+
         const { id } = req.params;
         const imagem = req.file.path;
 
@@ -87,6 +90,7 @@ server.get('/veiculo', async (req, resp) => {
         });
     }
 })
+
 
 
 //Buscar por nome

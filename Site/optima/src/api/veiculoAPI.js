@@ -30,3 +30,20 @@ export async function enviarImagemVeiculo(id, imagem){
     });
     return resposta.status;
 }
+
+
+export async function alterarVeiculo(modelo, marca, valor,placa, anofab, km, codigo, classe, id){
+    const resposta = await api.put(`/veiculo`, {
+        modelo: modelo,
+        marca: marca,
+        valor: valor,
+        placa:placa,
+        anofab: anofab,
+        km: km,
+        codigo: codigo,
+        classe: classe,
+        id:     id
+    }
+    )
+    return resposta.data;
+}

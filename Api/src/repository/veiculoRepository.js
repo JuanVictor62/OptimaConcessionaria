@@ -53,6 +53,25 @@ export async function listarTodosVeículos() {
 }
 
 
+export async function BuscarPorID() {
+    const comando =
+        `select 	id_veiculo          id,
+                ds_modelo               nome,
+                ds_marca                marca,
+                vl_valor                valor,
+                ds_placa 	 	        placa,
+                dt_anofab               anofab,
+                vl_km      	            km,
+                nr_codigo               codigo,
+                ds_classe 		        classe
+    from        tb_veiculo
+    where       id_veiculo              ?`
+
+    const [linhas] = await con.query(comando, [id]);
+    return linhas;
+}
+
+
 /*Buscar Veiculo*/
 export async function buscarPorNome(nome) {
     const comando =
