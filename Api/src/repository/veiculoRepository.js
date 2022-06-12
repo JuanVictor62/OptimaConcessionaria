@@ -4,9 +4,9 @@ import { con } from "./connection.js";
 export async function inserirVeiculo(veiculo) {
     const comando =
         `INSERT INTO tb_veiculo (ds_modelo, ds_marca, vl_valor, ds_placa, dt_anofab, vl_km, nr_codigo, ds_classe)
-                                     VALUES (?, ?, ?, ?, ?, ?, ?)`
+                                     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
 
-    const [resposta] = await con.query(comando,[veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe, veiculo.imagem]);
+    const [resposta] = await con.query(comando,[veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe]);
     veiculo.id = resposta.insertId;
     return veiculo;
 }
