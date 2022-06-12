@@ -10,7 +10,7 @@ export default function index() {
     async function carregarVeiculos(){
         const resp = await listarTodos();
         console.log(resp);
-        return resp; 
+        setVeiculos(resp); 
     }
 
     useEffect(()  => {
@@ -42,429 +42,38 @@ export default function index() {
 
             </div>
 
-            <section className="f2">
-
-                <div className="carros-geral">
-
+            {veiculos.map(iten => 
+                <div> 
                     <div className="carro-1">
-
                         <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
+                            <p className="title-c1"> {iten.nome} </p>
                         </div>
-
-                        <div className="card-c1">
-
+                    <div className="card-c1">
                             <div className="car-c1">
                                 <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
                             </div>
-
                             <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
+                                <b className='b-marca'> Marca: </b> {iten.marca}
                                 <br />
-                                <b className='b-marca'> Ano: </b> 2021
+                                <b className='b-marca'> Ano: </b> {iten.anofab}
                                 <br />
-                                <b className='b-marca'> Classe: </b> Suv
+                                <b className='b-marca'> Classe: </b> {iten.classe}
                                 <br />
-                                <b className='b-marca'> Km: </b> 90.000
+                                <b className='b-marca'> Km: </b> {iten.km}
                                 <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
+                                <b className='b-marca'> Valor: </b> R$ {iten.valor}
+                                <br /> 
+                                <b className='b-marca'> Placa: </b> {iten.placa}
                                 <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
+                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> {iten.codigo} </p>
                             </div>
-                        </div>
                     </div>
-
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div className="carro-1">
-
-                        <div className="name-c1">
-                            <p className="title-c1"> IX 35 </p>
-                        </div>
-
-                        <div className="card-c1">
-
-                            <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
-
-                            </div>
-
-                            <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> Hyundai
-                                <br />
-                                <b className='b-marca'> Ano: </b> 2021
-                                <br />
-                                <b className='b-marca'> Classe: </b> Suv
-                                <br />
-                                <b className='b-marca'> Km: </b> 90.000
-                                <br />
-                                <b className='b-marca'> Valor: </b> R$ 64.999,99
-                                <br />
-
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> 00000 </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
+            </div>
+            )}
 
-
-
-            </section>
-
+            
+        
             <footer className="f1-rodape">
                 <div f1-r-d1>
                     <a href="/landingpage">
