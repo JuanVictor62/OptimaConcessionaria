@@ -41,16 +41,16 @@ export default function index() {
             
 
             </div>
-
+<div className='abc'> 
             {veiculos.map(iten => 
-                <div> 
+                 
                     <div className="carro-1">
                         <div className="name-c1">
                             <p className="title-c1"> {iten.nome} </p>
                         </div>
                     <div className="card-c1">
                             <div className="car-c1">
-                                <img className="ix-img" src="../../assets/img/ix35 2021 png 1.png" alt="" />
+                                <img className="ix-img" src='{iten.imagem}' alt=''/>
                             </div>
                             <div className="card-2-c1">
                                 <b className='b-marca'> Marca: </b> {iten.marca}
@@ -69,9 +69,9 @@ export default function index() {
                             </div>
                     </div>
                 </div>
-            </div>
+            
             )}
-
+</div>
             
         
             <footer className="f1-rodape">

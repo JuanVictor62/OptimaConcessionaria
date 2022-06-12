@@ -43,7 +43,6 @@
 
         position: relative;
         right: 8em;
-        top: 1em;
     
         text-decoration: none;
         font-family: 'k2d';
@@ -435,8 +434,22 @@
     }
 
     @media(max-width:1920px){
+
+        .carros-todos {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 50%  ;
+        }
+
+        .abc {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .carro-1 {
             margin-left: 4.4em;
+            width: 21%;
         }
 
         .f1-r-d1 {
@@ -445,6 +458,10 @@
 
         .f1-r-d2 {
             margin-right: 13em;
+        }
+
+        .card-c1 {
+            height: 28em;
         }
 
         .f1-r-tpc2 {
@@ -460,6 +477,7 @@
         .f2-botao {
             position: relative;
             right: 11em;
+            margin-top: 1em;
         }
 
         .f1-r-in-23 {
