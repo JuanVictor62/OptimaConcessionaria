@@ -41,14 +41,19 @@ export default function index() {
             
 
             </div>
-<div className='abc'> 
+<div className='abc'>
+        <div>
+
+            <img className='' src='../../public/' alt='' />
+
+        </div>
             {veiculos.map(iten => 
                  
                     <div className="carro-1">
-                        <div className="name-c1">
+                        <img className='' src="../../assets/img/logo-lixeira.png"  alt='' /> 
+                            <div className="name-c1">
+                            
                             <p className='title-c1'> {iten.nome} </p>
-                            <img className='logo-remover' src='../../public/logo-lixeira.jpg' alt='' />  
-                            <img className='logo-editar' src='../../public/logo-editar' alt='' /> 
                         </div>
                     <div className="card-c1">
                             <div className="car-c1">
