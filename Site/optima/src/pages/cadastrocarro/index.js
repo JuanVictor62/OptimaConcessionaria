@@ -34,16 +34,11 @@ export default function Index() {
             }
 
             else {
-                await alterarVeiculo(modelo, marca, valor, placa, anofab, km, codigo, classe, usuario, id);
+                await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, codigo, classe, usuario);
                 await enviarImagemVeiculo(id, imagem);
             }
 
-            toast.dark(" 🚗 
-            
-            
-            
-            
-            veiculo cadastrado com sucesso! ");
+            toast.dark(" 🚗 veiculo cadastrado com sucesso! ");
 
 
         } catch (err) {
