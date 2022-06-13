@@ -147,7 +147,7 @@ server.delete('/veiculo/:id', async (req, resp) => {
 
         resp.status(204).send()
     } catch (err) {
-        resp.status(402).send({
+        resp.status(400).send({
             erro: err.message
         });
     }

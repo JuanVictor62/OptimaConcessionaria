@@ -136,6 +136,7 @@
         height: 408px;
         
         background: #E7E7E7;
+        padding-top: 0.6em;
         border-radius: 20px;
     }
     
@@ -385,9 +386,10 @@
         height: 1.5em;
         width: auto;
         position: relative;
-        left: 18em;
-        top: 7.8em;
+        left: 14.7em;
+        top: 8em;
         cursor: pointer;
+        z-index: 1;
     }
 
     .icon-edit {
@@ -396,9 +398,10 @@
         height: 1.5em;
         width: auto;
         position: relative;
-        left: 19em;
-        top: 7.8em;
+        left: 15.5em;
+        top: 8em;
         cursor: pointer;
+        z-index: 1;
     }
  
 //////////////////////////////////////////////////////////////    
@@ -466,20 +469,13 @@
             width: 50%  ;
         }
 
-        .name-c1 {
-            position: relative;
-            top: 7em;
+        
+        .title-c1 {
             display: flex;
             justify-content: center;
-            align-items:stretch;
-            height: 11%;
-            width:max-content;
-            word-spacing: 0;
-        }
-
-        .title-c1 {
             left: 0;
             top: 0;
+            padding-bottom: 0.2em;
         }
 
         .abc {
@@ -507,7 +503,7 @@
         }
 
         .card-c1 {
-            height: 28em;
+            height: 32em;
         }
 
         .f1-r-tpc2 {

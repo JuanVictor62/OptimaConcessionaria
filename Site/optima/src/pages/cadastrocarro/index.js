@@ -54,14 +54,15 @@ export default function Index() {
                 const r = await enviarImagemVeiculo(novoVeiculo.id, imagem);
 
                 setId(novoVeiculo.id);
+                toast.dark(" 🚗 veiculo cadastrado com sucesso! ");
             }
 
             else {
                 await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, codigo, classe, usuario);
                 await enviarImagemVeiculo(id, imagem);
+                toast.dark(" 🚗 veiculo alterado com sucesso! ");
             }
 
-            toast.dark(" 🚗 veiculo cadastrado com sucesso! ");
 
 
         } catch (err) {

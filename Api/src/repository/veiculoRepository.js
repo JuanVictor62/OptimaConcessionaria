@@ -89,7 +89,7 @@ export async function alterarVeiculo(id, veiculo) {
 
 
 /*Remover veiculo */
-export async function removerVeiculo() {
+export async function removerVeiculo(id) {
     const comando =
         `delete from tb_veiculo
 	 where       id_veiculo = ? `

@@ -5,6 +5,7 @@ import {listarTodos, buscarPorNome, apagarVeiculo } from '../../api/veiculoAPI'
 import { useEffect, useState } from 'react';
 
 import  {  confirmAlert  }  from  'react-confirm-alert';
+import { func } from 'prop-types';
 
 
 export default function index() {
@@ -21,7 +22,7 @@ export default function index() {
                 {
                     label: 'sim',
                     onClick: async () => {
-                        const resposta = await apagarVeiculo(id,nome);
+                        const resposta = await apagarVeiculo(id);
                         carregarVeiculos();
                         alert('veículo removido')
                     }
@@ -50,6 +51,10 @@ export default function index() {
         setVeiculos(resp)
     }
 
+    function mostrarImagem(imagem) {
+        return `http://localhost:5000/${imagem}`
+    }
+
 
     return (
         <main className="container">
@@ -70,10 +75,8 @@ export default function index() {
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
 
                     <Link to="/" className="f2-botao">Voltar</Link>
-
-            
-
             </div>
+
 <div className='abc'>
         <div>
 
@@ -86,13 +89,14 @@ export default function index() {
 
                         <img className='icon-edit' src="../../assets/img/1200px-Feedbin-Icon-home-edit.svg.png"  alt='editar'  /> 
 
-                            <div className="name-c1">
-                            
-                            <p className='title-c1'> {iten.nome} </p>
-                        </div>
+                        
                     <div className="card-c1">
+
+              
+                    <p className='title-c1'> {iten.nome} </p>
+
                             <div className="car-c1">
-                                <img className="ix-img" src='{iten.imagem}' alt=''/>
+                                <img className="ix-img" src={mostrarImagem(iten.imagem)}  alt=''/>
                             </div>
                             <div className="card-2-c1">
                                 <b className='b-marca'> Marca: </b> {iten.marca}
