@@ -1,10 +1,11 @@
 import './index.scss';
 import '../commom/commom.css';
 import { Link } from 'react-router-dom';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import storage from 'local-storage'
-import { cadastrarVeiculo, enviarImagemVeiculo, alterarVeiculo } from '../../api/veiculoAPI';
+import { cadastrarVeiculo, enviarImagemVeiculo, alterarVeiculo, buscarPorId, buscarImagem } from '../../api/veiculoAPI';
 import { toast } from 'react-toastify';
+import { useParams } from 'react-router-dom';
 
 export default function Index() {
     const [modelo, setModelo] = useState('');
@@ -17,6 +18,28 @@ export default function Index() {
     const [classe, setClasse] = useState('');
     const [imagem, setImagem] = useState('');
     const [id, setId] = useState(0);
+    const { idparam } = useParams();
+
+    useEffect(() => {
+    
+        if(idparam) {
+            carregarVeiculo()
+        }
+    }, [])
+
+    async function carregarVeiculo(){
+        const resposta = await buscarPorId(idparam)
+        setModelo(resposta.nome)
+        setMarca(resposta.marca)
+        setValor(resposta.valor)
+        setPlaca(resposta.placa)
+        setAnoFab(resposta.anofab)
+        setKm(resposta.km)
+        setCodigo(resposta.codigo)
+        setClasse(resposta.classe)
+        setImagem(resposta.imagem)
+        setId(resposta.id)
+}
 
 
     async function salvarClick() {
@@ -51,7 +74,12 @@ export default function Index() {
     }
 
     function mostrarImagem() {
+        if(typeof(imagem) == 'object')
         return URL.createObjectURL(imagem);
+
+        else {
+            return buscarImagem(imagem)
+        }
     }
 
 

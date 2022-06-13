@@ -13,6 +13,7 @@ export default function Index() {
                 <Route path='/login' element={<Login/>} />
                 <Route path='/pagecarros' element={<Pagecarros/>} />
                 <Route path='/cadastrocarro' element={<Cadastrocarro/>} />
+                <Route path='/alterarcarro/:idparam' element={<Cadastrocarro/>} />
             </Routes>
         </BrowserRouter>
     )

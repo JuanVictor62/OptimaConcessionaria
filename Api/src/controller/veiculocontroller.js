@@ -60,22 +60,8 @@ server.put('/veiculo/:id/capa', upload.single('capa'), async (req, resp) => {
 })
 
 
-//Deletar Veiculo
-server.delete('/veiculo/:id', async (req, resp) => {
-    try {
-        const { id } = req.params;
 
-        const resposta = await removerVeiculo(id);
-        if (resposta != 1)
-            throw new Error("Veículo não pode ser removido")
 
-        resp.status(204).send()
-    } catch (err) {
-        resp.status(402).send({
-            erro: err.message
-        });
-    }
-})
 
 
 //Listar Veiculos
@@ -109,6 +95,9 @@ server.get('/veiculo/busca', async (req, resp) => {
         })
     }
 })
+
+
+
 
 // alterar veiculo
 server.put('/veiculo', async (req, resp) => {
@@ -144,6 +133,38 @@ server.put('/veiculo', async (req, resp) => {
         resp.status(400).send({
             erro: err.message
         })
+    }
+})
+
+//Deletar Veiculo
+server.delete('/veiculo/:id', async (req, resp) => {
+    try {
+        const { id } = req.params;
+
+        const resposta = await removerVeiculo(id);
+        if (resposta != 1)
+            throw new Error("Veículo não pode ser removido")
+
+        resp.status(204).send()
+    } catch (err) {
+        resp.status(402).send({
+            erro: err.message
+        });
+    }
+})
+
+//Buscar por ID
+server.get('/veiculo/:id', async (req, resp) => {
+    try {
+        const lol = Number(req.params.id);
+        const resposta = await BuscarPorID(lol);
+
+        if (!resposta) {
+            throw new Error('Veiculo não localizado.')
+        }
+        resp.send(resposta);
+    } catch (err) {
+        console.log(err)
     }
 })
 

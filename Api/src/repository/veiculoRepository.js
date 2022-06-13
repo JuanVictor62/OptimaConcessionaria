@@ -6,10 +6,11 @@ export async function inserirVeiculo(veiculo) {
         `INSERT INTO tb_veiculo (ds_modelo, ds_marca, vl_valor, ds_placa, dt_anofab, vl_km, nr_codigo, ds_classe)
                                      VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
 
-    const [resposta] = await con.query(comando,[veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe]);
+    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe]);
     veiculo.id = resposta.insertId;
     return veiculo;
 }
+
 
 
 /*Inserir imagem*/
@@ -23,15 +24,8 @@ export async function inserirImagem(imagem, id) {
     return resposta.affectedRows;
 }
 
-/*Remover veiculo */
-export async function removerVeiculo(id) {
-    const comando =
-        `delete from tb_veiculo
-	 where       id_veiculo = ? `
 
-    const [resposta] = await con.query(comando, [id])
-    return resposta.affectedRows
-}
+
 
 
 /*listar veiculos */
@@ -45,7 +39,8 @@ export async function listarTodosVeículos() {
                 dt_anofab               anofab,
                 vl_km      	            km,
                 nr_codigo               codigo,
-                ds_classe 		        classe
+                ds_classe 		        classe,
+                img_veiculo             imagem
     from        tb_veiculo`
 
     const [linhas] = await con.query(comando);
@@ -53,23 +48,7 @@ export async function listarTodosVeículos() {
 }
 
 
-export async function BuscarPorID() {
-    const comando =
-        `select 	id_veiculo          id,
-                ds_modelo               nome,
-                ds_marca                marca,
-                vl_valor                valor,
-                ds_placa 	 	        placa,
-                dt_anofab               anofab,
-                vl_km      	            km,
-                nr_codigo               codigo,
-                ds_classe 		        classe
-    from        tb_veiculo
-    where       id_veiculo              ?`
 
-    const [linhas] = await con.query(comando, [id]);
-    return linhas;
-}
 
 
 /*Buscar Veiculo*/
@@ -79,12 +58,14 @@ export async function buscarPorNome(nome) {
 		            ds_modelo                nome,
 		            ds_marca                 marca,
 		            vl_valor                 valor
-        from tb_veiculo
+       from tb_veiculo
 	            where ds_modelo    like ? `
 
     const [linhas] = await con.query(comando, [`%${nome}%`]);
     return linhas;
 }
+
+
 
 
 export async function alterarVeiculo(id, veiculo) {
@@ -105,3 +86,35 @@ export async function alterarVeiculo(id, veiculo) {
     const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe, veiculo.id])
     return resposta.affectedRows;
 }
+
+
+/*Remover veiculo */
+export async function removerVeiculo() {
+    const comando =
+        `delete from tb_veiculo
+	 where       id_veiculo = ? `
+
+    const [resposta] = await con.query(comando, [id])
+    return resposta.affectedRows
+}
+
+
+// Buscar por ID
+export async function BuscarPorID(id) {
+    const comando =
+        `SELECT id_veiculo              id,
+               ds_modelo               nome,
+                ds_marca                marca,
+                vl_valor                valor,
+                ds_placa 	 	        placa,
+                dt_anofab               anofab,
+                vl_km      	            km,
+                nr_codigo               codigo,
+                ds_classe 		        classe
+    FROM        tb_veiculo
+    WHERE       id_veiculo     =         ? ` ;
+    const [linhas] = await con.query(comando, [id]);
+   return linhas[0];
+}
+
+

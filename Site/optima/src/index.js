@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import  'react-confirm-alert/src/react-confirm-alert.css' ; 
+
 
 import './index.css';
 

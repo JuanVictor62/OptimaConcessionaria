@@ -1,15 +1,42 @@
 import './index.scss';
 import '../commom/commom.css';
 import { Link } from 'react-router-dom';
-import {listarTodos, buscarPorNome } from '../../api/veiculoAPI'
+import {listarTodos, buscarPorNome, apagarVeiculo } from '../../api/veiculoAPI'
 import { useEffect, useState } from 'react';
+
+import  {  confirmAlert  }  from  'react-confirm-alert';
+
 
 export default function index() {
     const [veiculos, setVeiculos] = useState([]);
+    const [filtro, setFiltro] = useState('');
+
+
+    async function ClickremoverVeiculo(id, nome) {
+
+        confirmAlert({
+            title: ' Remover veículo',
+            message: `Confirmar remoção do veiculo ${nome}`,
+            buttons: [
+                {
+                    label: 'sim',
+                    onClick: async () => {
+                        const resposta = await apagarVeiculo(id,nome);
+                        carregarVeiculos();
+                        alert('veículo removido')
+                    }
+                },
+                {
+                    label: 'não'
+                }   
+            ]
+    })
+
+           
+    }
 
     async function carregarVeiculos(){
         const resp = await listarTodos();
-        console.log(resp);
         setVeiculos(resp); 
     }
 
@@ -18,19 +45,25 @@ export default function index() {
     }, [])
 
 
+    async function filtrar(){
+        const resp = await buscarPorNome(filtro);
+        setVeiculos(resp)
+    }
+
+
     return (
         <main className="container">
             <div className="f2-cabecalho">
-                <Link to="/landingpage">
+                <Link to="/">
                     <img className="f2-logo62" src="../../assets/img/Logo.svg" alt='' />
                 </Link>
 
                 <div className='search'>
 
                     <form>
-                        <input className="f2-1-1" type="text" placeholder="Buscar" />
+                        <input className="f2-1-1" type="text" placeholder="Buscar" value={filtro} onChange={e => setFiltro(e.target.value)} />
 
-                        <img className="f2-img" src="../../assets/img/image 25.png" onclick="executar()" alt='' />
+                        <img className="f2-img" src="../../assets/img/image 25.png" onClick={filtrar} alt='' />
                     </form>
                 </div>
 
@@ -44,16 +77,14 @@ export default function index() {
 <div className='abc'>
         <div>
 
-            <img className='' src='../../public/' alt='' />
-
         </div>
             {veiculos.map(iten => 
                  
                     <div className="carro-1">
                         
-                        <img className='icon-lixeira' src="../../assets/img/logo-lixeira.png"  alt='' />
+                        <img className='icon-lixeira' src="../../assets/img/logo-lixeira.png"  alt='remover' onClick={() => ClickremoverVeiculo(iten.id, iten.nome) } />
 
-                        <img className='icon-edit' src="../../assets/img/1200px-Feedbin-Icon-home-edit.svg.png"  alt='' /> 
+                        <img className='icon-edit' src="../../assets/img/1200px-Feedbin-Icon-home-edit.svg.png"  alt='editar'  /> 
 
                             <div className="name-c1">
                             
@@ -76,7 +107,7 @@ export default function index() {
                                 <br /> 
                                 <b className='b-marca'> Placa: </b> {iten.placa}
                                 <br />
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> {iten.codigo} </p>
+                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> {iten.id} </p>
                             </div>
                     </div>
                 </div>

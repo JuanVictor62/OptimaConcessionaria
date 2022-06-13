@@ -60,3 +60,18 @@ export async function buscarPorNome(nome){
     const resposta = await api.get(`/veiculo/busca?nome=${nome}`)
     return resposta.data;
 }
+
+
+export async function apagarVeiculo(id) {
+    const resposta = await api.delete(`/veiculo/${id}`);
+    return resposta.status;
+}
+
+export async function buscarPorId(id) {
+    const resposta = await api.get(`/veiculo/${id}`);
+    return resposta.data
+}
+
+export async function buscarImagem(imagem) {
+    return `${api.getUri()}/${imagem}`   
+}
