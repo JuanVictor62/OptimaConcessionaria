@@ -111,8 +111,8 @@ export default function index() {
 
                             <img className='f1-cel' src="./assets/img/celular.png" alt='' />
 
-                            <p className='f1-in-9'>A concessionaria tambem se dispõe a ajudar os interessados em nossos veiculos pelo WhatsApp para
-                                ajuda-los respondendo suas duvidas e fazer um convite para eles virem à loja.</p>
+                            <p className='f1-in-9'>A concessionaria também se dispõe a ajudar os interessados em nossos veiculos pelo WhatsApp para
+                                ajuda-los respondendo suas duvidas e fazer um convite para virem à loja presencial.</p>
 
                         </div>
 

@@ -158,7 +158,7 @@ export default function Index() {
                                     }
 
                                     {imagem &&
-                                        <img className='imagemCapa' src={mostrarImagem()} alt='' />
+                                        <img className='imagemCapa' src={mostrarImagem(iten.imagem)} alt='' />
                                     }
 
                                     <input type='file' id='imagemCapa' onChange={e => setImagem(e.target.files[0])} />

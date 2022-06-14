@@ -1580,4 +1580,97 @@
             right: 9em;
         }
     }
+
+
+    @media(max-width: 1280px) {
+        .f1-bt-2 {
+            position: relative;
+            left: -30em;
+        }
+
+        .f1-in-2 {
+            height: 20%;
+        }
+
+        .f1-cab {
+            height: 87.5%;
+            width: 100%;
+        }
+
+        .f1-text {
+            position: relative;
+            left: -80em;
+            justify-content: start;
+        }
+        
+        .aa {
+            position: relative;
+            left: 97em;
+            bottom: 4em;
+        }
+
+        .f1-info2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 0;
+            width: 70%;
+            margin-left: 13em;
+        }
+
+        .f1-in-4 {
+            position: relative;
+            left: 0;
+            margin-left: 0;
+        }
+
+        .f1-in-5 {
+            margin-right: 0;
+        }
+
+        .f1-in-3 {
+            margin-left: 0;
+            position: relative;
+            left: 15em;
+        }
+
+        .f1-log-2 {
+            margin-left: 0;
+            position: relative;
+            left: 38.5em;
+        }
+
+        .f1-f3-frases {
+            margin-left: -5em;
+        }
+
+        .f1-card-1 {
+            margin-left: -10em;
+        }
+
+        .f1-f5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .f1-car-1 {
+            margin-left: -14em;
+        }
+
+        .f1-car-2 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .f1-car-3 {
+            margin-left: 1em;
+        }
+
+
+
+
+
+    }
 }
