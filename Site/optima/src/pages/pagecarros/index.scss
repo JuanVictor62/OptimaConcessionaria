@@ -532,4 +532,18 @@
             bottom: 1em;
         }
     }
+
+    @media(max-width: 1280px) {
+        .f2-1-1 {
+            margin-left: -5em;
+        }
+
+        .f3-botao {
+            left: 13em;
+        }
+
+        .f2-botao {
+            left: 1em;
+        }
+    }
 }

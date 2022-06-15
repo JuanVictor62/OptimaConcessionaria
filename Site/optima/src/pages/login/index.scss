@@ -4,9 +4,9 @@
     .f2-fundo {
         background-image: url(../../../public/assets/img/background-login.png);
         background-repeat: no-repeat;
-        background-size: 100%;
+        height: 52.3em;
         padding-top: 5em;
-        padding-bottom: 11.4em;
+       
     }
     
     .f2-painellogin {
@@ -101,7 +101,6 @@
     @media(max-width:1920px)
     {
         .f2-fundo {
-            padding-bottom: 20em;
         }
     }
 }
