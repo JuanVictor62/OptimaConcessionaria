@@ -54,7 +54,7 @@ export default function Index() {
                     <input class="f2-senha2" type="password" id="senha" value={senha} onChange={e => setSenha(e.target.value)}/>
 
                     <p></p>
-                    <button className='f2-logar' onClick={entrarClick} disabled={carregando}> Enviar </button>
+                    <button className='f2-logarr' onClick={entrarClick} disabled={carregando}> Entrar </button>
                     <div>
                         {erro}
                     </div>

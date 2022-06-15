@@ -62,21 +62,19 @@
         border-radius: 5px;
     }
     
-    .f2-logar {
-        margin-top: 1em;
-        margin-bottom: 1em;
-        border: none;
-    
+    .f2-logarr {
+        height: 2em;
         text-decoration: none;
-        font-family: 'inter' ;
+        font-family: "inter";
         color: #000000;
         background-color: #ffffff;
-        padding: 0.3em;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
+        padding-top: 0.3em;
+        padding-left: 1.7em;
+        padding-right: 1.7em;
+        padding-bottom: 0.7em;
         border-radius: 2em;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
+        border: none;
+
     }
     
     .f2-botao:hover {
@@ -87,7 +85,7 @@
         
     }
     
-    .f2-logar:hover {
+    .f2-logarr:hover {
         -webkit-transform:scale(1.1);
         transform:scale(1.1);
         transition: all 0.5s ease;

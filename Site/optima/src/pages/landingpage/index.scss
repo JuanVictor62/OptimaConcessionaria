@@ -1600,7 +1600,6 @@
         .f1-text {
             position: relative;
             left: -80em;
-            justify-content: start;
         }
         
         .aa {
@@ -1669,8 +1668,104 @@
         }
 
 
+        .f1-r-d2 {
+            margin-right: 0;
+        }
 
+        .f1-r-img-4 {
+            right: 0;
+        }
 
+        .f1-r-in-21 {
+            right: 0;
+        }
 
+        .f1-r-in-22 {
+            right: 0;
+        }
+
+        .f1-r-in-23 {
+            width: 180%;
+        }
+
+        .f1-r-c4 {
+            width: 130%;
+        }
+
+        .f1-r-tpc {
+            width: 59%;
+        }
+
+        .f1-contato {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 34em;
+            left: 5em;
+        }
+
+        .f1-contato:hover {
+            cursor: pointer;
+            .f1-contato-1 {
+                color: #044886;
+            }
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+
+        .f1-contato-1 {
+            font-family: 'k2d';
+            color: rgb(0, 0, 0);
+            background-color: white;
+            border-radius: 2em;
+            padding-right: 2em;
+            padding-left: 0.7em;
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+
+        }
+
+        .f1-contato-img1 {
+            height: 10%;
+        }
+
+        .f1-contato-img2 {
+            position: relative;
+            left: 4.6em;
+            top: -1.6em;
+            height: 1.2em;
+            width: auto;
+        }
+
+        
+
+        .f1-text {
+            position: relative;
+            left: -71.2em;
+            bottom: 2em;
+        }
+        
+        .f2-botao:hover {
+            color: #044886;
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+        }
+        
+        .f2-botao {
+            position: relative;
+            left: 70em;
+            top: 2em;
+
+            height: 2em;
+            text-decoration: none;
+            font-family: "inter";
+            color: #000000;
+            background-color: #ffffff;
+            padding: 0.3em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            border-radius: 2em;
+        }
     }
 }

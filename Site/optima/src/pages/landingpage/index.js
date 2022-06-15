@@ -1,6 +1,6 @@
 import './index.scss';
 import '../commom/commom.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function index() {
@@ -9,37 +9,32 @@ export default function index() {
             <div id="home" className='f1-container'>
                 <section className="f1">
                     <div className='f1-cab'>
-                        <Link to='/'> 
-                            <img className='f1-log' src="./assets/img/logo.svg" width="180" height="90" alt='' /> 
+                        <Link to='/'>
+                            <img className='f1-log' src="./assets/img/logo.svg" width="180" height="90" alt='' />
                         </Link>
 
-                        <div className='f1-bot'>
-                            <Link to='/login' className='f1-bt-2'>Login</Link>
-                        </div>
+                        
+                        
+                        <a className='f2-botao' href="/login"> Login </a>
+
                     </div>
 
-                    <div className='f1-text'> 
+                    <div className='f1-text'>
 
                         <h1 className='f1-in-1'>Procurando seu semi-novo?</h1>
                         <p className='f1-in-2'>A optima te oferece uma váriação de modelos, com preços acessivéis e serviços de
                             qualidade que você só encontra aqui.</p>
 
-                        <div className='aa'> <a href="https://api.whatsapp.com/send?phone=5511988749207"> 
-
-                        </a>    
-                        
-                        <div className="ppp"> 
-                            <img className='f1-bt-3-img' src="./assets/img/logo zap.png" alt='' />
-                             <a href="https://api.whatsapp.com/send?phone=5511988749207" className='f1-bt-3-ctt'> 
-                                Contato 
-                             </a> 
+                        <div className='f1-contato'>
+                        <a className='.f1-contato-link' href="https://api.whatsapp.com/send?phone=5511988749207">   
+                            <div className='f1-contato-1'> Contato </div>
+                            <div className='f1-contato-img1'> <img className='f1-contato-img2' src="./assets/img/icons8-whatsapp.svg" alt='' />  </div>
+                            </a>
                         </div>
-
                         </div>
-
                         <div className='f1-blue'> </div>
 
-                    </div>
+                   
 
 
                 </section>
@@ -47,14 +42,14 @@ export default function index() {
 
                 <section id="info" className='f1-f2'>
 
-                        <div className='info2'>
-                            <h2 className='f1-in-3'>Sobre a</h2>
+                    <div className='info2'>
+                        <h2 className='f1-in-3'>Sobre a</h2>
 
-                            <img className='f1-log-2' src="./assets/img/optima black.png" width="140" height="100" alt='' />
-                        </div>
+                        <img className='f1-log-2' src="./assets/img/optima black.png" width="140" height="100" alt='' />
+                    </div>
 
-                        <div className='f1-info'>
-                            <div className='f1-info2'>
+                    <div className='f1-info'>
+                        <div className='f1-info2'>
                             <p className='f1-in-4'>
                                 Atuando no mercado veicular desde 2013 e atendendo mais de 17 estados, a optima conta com uma
                                 equipe de profissionais capacitados e de pronto atendimento, agrupando confiabilidade, conforto
@@ -62,23 +57,23 @@ export default function index() {
                             <p className='f1-in-5'>
                                 Afiliada com a <b> WebMotors</b>, a Optima conta com Semi-novos revisados por especialistas e com a
                                 documentação completa.
-                                </p>
+                            </p>
+                        </div>
+
+                        <div>
+
+                            <div className='f1-images'>
+
+                                <img className='f1-boss' src="./assets/img/boss.png" alt='' />
+
+                                <img className='f1-equipe' src="./assets/img/equipe.png" alt='' />
+
                             </div>
 
-                                <div>
-
-                                    <div className='f1-images'>
-
-                                        <img className='f1-boss' src="./assets/img/boss.png" alt='' />
-
-                                        <img className='f1-equipe' src="./assets/img/equipe.png" alt='' />
-
-                                    </div>
-
-
-                                </div>
 
                         </div>
+
+                    </div>
 
                 </section>
 
@@ -128,7 +123,7 @@ export default function index() {
 
                             <img className='f1-oil' src="./assets/img/óleo.png" alt='' />
 
-                            <p className='f1-in-11'> Nossa concessionaria tem como serviços adicionais aos nossos clientes, que na compra do seu primeiro veiculo usado na nossa empresa, garanta uma troca de oléo gratuita. </p>
+                            <p className='f1-in-11'> Nós da optima temos como serviço adicional, que na compra do seu primeiro semi-novo, garante uma troca de oléo gratuita. </p>
 
                         </div>
 
@@ -171,13 +166,13 @@ export default function index() {
 
                             <img className='f1-c-3' src="./assets/img/CIVIC 2021 PNG 1.png" alt='' />
 
-                                <h3 className='f1-in-17'>A partir de: R$ 92.000</h3>
+                            <h3 className='f1-in-17'>A partir de: R$ 92.000</h3>
 
-                                <a className='tag-a' href="https://api.whatsapp.com/send?phone=5511988749207"> <button className='f1-bt-6'>Estou Interessado </button>
-                                </a>
+                            <a className='tag-a' href="https://api.whatsapp.com/send?phone=5511988749207"> <button className='f1-bt-6'>Estou Interessado </button>
+                            </a>
 
                         </div>
-                        </div>
+                    </div>
 
                 </section>
 
@@ -207,7 +202,7 @@ export default function index() {
                         </div>
                         <div className='f1-r-tpc2'>
                             <h3 className='f1-in-19'>Sobre nós</h3>
-                        <div className='transi'>    <a className='f1-in-21' href="#info"> <p className='f1-in-20'>Informações da empresa </p> </a> </div>
+                            <div className='transi'>    <a className='f1-in-21' href="#info"> <p className='f1-in-20'>Informações da empresa </p> </a> </div>
                             <a className='f1-in-20' href="https://api.whatsapp.com/send?phone=5511988749207"><p className='f1-in-20'>Contato</p></a>
                         </div>
                         <div className='f1-r-tpc3'>
@@ -220,7 +215,7 @@ export default function index() {
                     <div className='aaaa'>
                         <div className='f1-r-c4'>
                             <img className='f1-r-img-4' src="./assets/img/icons8-whatsapp-192.png" alt='' />
-                                <p className='f1-r-in-21'>11 59746879</p>
+                            <p className='f1-r-in-21'>11 59746879</p>
                         </div>
                         <div>
                             <p className='f1-r-in-22'> Optimaconce@gmail.com</p>

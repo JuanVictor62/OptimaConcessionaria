@@ -20,6 +20,7 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    border: 1px solid blac;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,4 +31,9 @@
 ::-webkit-scrollbar {
     width: 10px;
     height: 1px;
+}
+
+
+a:link, a:active, a:visited {
+    text-decoration: none;
 }
