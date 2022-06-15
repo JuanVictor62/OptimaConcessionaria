@@ -62,9 +62,6 @@ export default function Index() {
                 await enviarImagemVeiculo(id, imagem);
                 toast.dark(" 🚗 veiculo alterado com sucesso! ");
             }
-
-
-
         } catch (err) {
             toast("Ocorreu um erro, tente novamente!");
         }
@@ -75,15 +72,13 @@ export default function Index() {
     }
 
     function mostrarImagem() {
-        if(typeof(imagem) == 'object')
-        return URL.createObjectURL(imagem);
-
+        if(typeof(imagem) === 'object'){
+            return URL.createObjectURL(imagem);
+        }
         else {
             return buscarImagem(imagem)
         }
     }
-
-
 
 
     return (
@@ -158,7 +153,7 @@ export default function Index() {
                                     }
 
                                     {imagem &&
-                                        <img className='imagemCapa' src={mostrarImagem(iten.imagem)} alt='' />
+                                        <img className='imagemCapa' src={mostrarImagem(imagem)} alt='' />
                                     }
 
                                     <input type='file' id='imagemCapa' onChange={e => setImagem(e.target.files[0])} />
@@ -166,6 +161,7 @@ export default function Index() {
                             </div>
 
                         </div>
+
                     </div>
                 </div>
                 <button className="p4-btn-registrar" onClick={salvarClick}> Resgistrar </button>

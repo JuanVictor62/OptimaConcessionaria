@@ -26,7 +26,7 @@ export async function enviarImagemVeiculo(id, imagem){
     const resposta = await api.put(`/veiculo/${id}/capa`, formData, {
         headers: {
             "Content-Type": "multipart/form-data"
-        },
+        }
     });
     return resposta.status;
 }

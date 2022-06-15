@@ -81,11 +81,11 @@ export default function index() {
         <div>
 
         </div>
-            {veiculos.map(iten => 
+            {veiculos.map(item => 
                  
                     <div className="carro-1">
                         
-                        <img className='icon-lixeira' src="../../assets/img/logo-lixeira.png"  alt='remover' onClick={() => ClickremoverVeiculo(iten.id, iten.nome) } />
+                        <img className='icon-lixeira' src="../../assets/img/logo-lixeira.png"  alt='remover' onClick={() => ClickremoverVeiculo(item.id, item.nome) } />
 
                         <img className='icon-edit' src="../../assets/img/1200px-Feedbin-Icon-home-edit.svg.png"  alt='editar'  /> 
 
@@ -93,25 +93,25 @@ export default function index() {
                     <div className="card-c1">
 
               
-                    <p className='title-c1'> {iten.nome} </p>
+                    <p className='title-c1'> {item.nome} </p>
 
                             <div className="car-c1">
-                                <img className="ix-img" src={mostrarImagem(iten.imagem)}  alt=''/>
+                                <img className="ix-img" src={mostrarImagem(item.imagem)}  alt=''/>
                             </div>
                             <div className="card-2-c1">
-                                <b className='b-marca'> Marca: </b> {iten.marca}
+                                <b className='b-marca'> Marca: </b> {item.marca}
                                 <br />
-                                <b className='b-marca'> Ano: </b> {iten.anofab}
+                                <b className='b-marca'> Ano: </b> {item.anofab}
                                 <br />
-                                <b className='b-marca'> Classe: </b> {iten.classe}
+                                <b className='b-marca'> Classe: </b> {item.classe}
                                 <br />
-                                <b className='b-marca'> Km: </b> {iten.km}
+                                <b className='b-marca'> Km: </b> {item.km}
                                 <br />
-                                <b className='b-marca'> Valor: </b> R$ {iten.valor}
+                                <b className='b-marca'> Valor: </b> R$ {item.valor}
                                 <br /> 
-                                <b className='b-marca'> Placa: </b> {iten.placa}
+                                <b className='b-marca'> Placa: </b> {item.placa}
                                 <br />
-                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> {iten.id} </p>
+                                <p className="card-3-c1"> <b className='b-codigo-c1'>Código:</b> {item.id} </p>
                             </div>
                     </div>
                 </div>
