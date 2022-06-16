@@ -79,11 +79,12 @@ export async function alterarVeiculo(id, veiculo) {
      dt_anofab       =	    ?,
      vl_km      	 =      ?,
      nr_codigo       =      ?,
-     ds_classe 		 =      ?
+     ds_classe 		 =      ?,
+     img_veiculo     =      ?
 
     where id_veiculo = ?`
 
-    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe, veiculo.id])
+    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe, veiculo.imagem, veiculo.id])
     return resposta.affectedRows;
 }
 
@@ -110,7 +111,8 @@ export async function BuscarPorID(id) {
                 dt_anofab               anofab,
                 vl_km      	            km,
                 nr_codigo               codigo,
-                ds_classe 		        classe
+                ds_classe 		        classe,
+                img_veiculo             imagem
     FROM        tb_veiculo
     WHERE       id_veiculo     =         ? ` ;
     const [linhas] = await con.query(comando, [id]);

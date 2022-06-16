@@ -58,7 +58,7 @@ export default function Index() {
             }
 
             else {
-                await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, codigo, classe, usuario);
+                await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, codigo, classe, usuario,imagem>f);
 
                 if(typeof(imagem) == 'object')
                     await enviarImagemVeiculo(id, imagem);

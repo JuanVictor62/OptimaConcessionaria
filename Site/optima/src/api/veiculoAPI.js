@@ -45,7 +45,7 @@ export async function buscarPorNome(nome){
 }
 
 
-export async function alterarVeiculo(id, modelo, marca, valor,placa, anofab, km, codigo, classe){
+export async function alterarVeiculo(id, modelo, marca, valor,placa, anofab, km, codigo, classe, imagem){
     const resposta = await api.put(`/veiculo`, {
         id:     id,
         modelo: modelo,
@@ -55,7 +55,8 @@ export async function alterarVeiculo(id, modelo, marca, valor,placa, anofab, km,
         anofab: anofab,
         km: km,
         codigo: codigo,
-        classe: classe
+        classe: classe,
+        imagem: imagem
     }
     )
     return resposta.data;
