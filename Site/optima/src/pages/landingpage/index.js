@@ -13,8 +13,6 @@ export default function index() {
                             <img className='f1-log' src="./assets/img/logo.svg" width="180" height="90" alt='' />
                         </Link>
 
-                        
-                        
                         <a className='f2-botao' href="/login"> Login </a>
 
                     </div>
