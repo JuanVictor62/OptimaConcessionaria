@@ -72,6 +72,6 @@ export async function buscarPorId(id) {
     return resposta.data
 }
 
-export async function buscarImagem(imagem) {
-    return `${api.getUri()}/${imagem}`   
+export function buscarImagem(imagem) {
+    return `${api.getUri()}/${imagem}`
 }

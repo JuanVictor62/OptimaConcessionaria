@@ -1,6 +1,6 @@
 import './index.scss';
 import '../commom/commom.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {listarTodos, buscarPorNome, apagarVeiculo } from '../../api/veiculoAPI'
 import { useEffect, useState } from 'react';
 
@@ -11,6 +11,13 @@ import { func } from 'prop-types';
 export default function index() {
     const [veiculos, setVeiculos] = useState([]);
     const [filtro, setFiltro] = useState('');
+
+    const navigate = useNavigate()
+
+    async function editarVeiculo(id){
+        navigate(`/alterarcarro/${id}`);
+    }
+
 
 
     async function ClickremoverVeiculo(id, nome) {
@@ -87,7 +94,7 @@ export default function index() {
                         
                         <img className='icon-lixeira' src="../../assets/img/logo-lixeira.png"  alt='remover' onClick={() => ClickremoverVeiculo(item.id, item.nome) } />
 
-                        <img className='icon-edit' src="../../assets/img/1200px-Feedbin-Icon-home-edit.svg.png"  alt='editar'  /> 
+                        <img className='icon-edit' src="../../assets/img/1200px-Feedbin-Icon-home-edit.svg.png"  alt='editar'  onClick={() => editarVeiculo(item.id)}/> 
 
                         
                     <div className="card-c1">

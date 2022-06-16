@@ -16,29 +16,29 @@ export default function Index() {
     const [km, setKm] = useState(0);
     const [codigo, setCodigo] = useState(0);
     const [classe, setClasse] = useState('');
-    const [imagem, setImagem] = useState('');
+    const [imagem, setImagem] = useState();
     const [id, setId] = useState(0);
     const { idparam } = useParams();
 
     useEffect(() => {
     
-        if(idparam) {
+        if (idparam) {
             carregarVeiculo()
         }
     }, [])
 
     async function carregarVeiculo(){
         const resposta = await buscarPorId(idparam)
-        setModelo(resposta.nome)
-        setMarca(resposta.marca)
-        setValor(resposta.valor)
-        setPlaca(resposta.placa)
-        setAnoFab(resposta.anofab)
-        setKm(resposta.km)
-        setCodigo(resposta.codigo)
-        setClasse(resposta.classe)
-        setImagem(resposta.imagem)
-        setId(resposta.id)
+        setModelo(resposta.nome);
+        setMarca(resposta.marca);
+        setValor(resposta.valor);
+        setPlaca(resposta.placa);
+        setAnoFab(resposta.anofab);
+        setKm(resposta.km);
+        setCodigo(resposta.codigo);
+        setClasse(resposta.classe);
+        setImagem(resposta.imagem);
+        setId(resposta.id);
 }
 
 
@@ -59,7 +59,10 @@ export default function Index() {
 
             else {
                 await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, codigo, classe, usuario);
-                await enviarImagemVeiculo(id, imagem);
+
+                if(typeof(imagem) == 'object')
+                    await enviarImagemVeiculo(id, imagem);
+
                 toast.dark(" 🚗 veiculo alterado com sucesso! ");
             }
         } catch (err) {
@@ -72,7 +75,7 @@ export default function Index() {
     }
 
     function mostrarImagem() {
-        if(typeof(imagem) === 'object'){
+        if (typeof (imagem) == 'object'){
             return URL.createObjectURL(imagem);
         }
         else {
