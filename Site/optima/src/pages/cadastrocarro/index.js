@@ -1,6 +1,7 @@
 import './index.scss';
 import '../commom/commom.css';
 import { Link } from 'react-router-dom';
+import Cabecalho from '../../components/cabecalho'
 import { useState, useEffect } from 'react'
 import storage from 'local-storage'
 import { cadastrarVeiculo, enviarImagemVeiculo, alterarVeiculo, buscarPorId, buscarImagem } from '../../api/veiculoAPI';
@@ -86,15 +87,7 @@ export default function Index() {
 
     return (
         <section className='p4-container'>
-            <div className='p4-cabeçalho'>
-                <div className='p4-logo'>
-                    <img className='logo' src="../../assets/img/optima white.png" alt="" />
-                </div>
-                <div className='p4-bt-voltar'>
-                    <Link to="/pagecarros" className='p4-btvoltar'> voltar </Link>
-                </div>
-            </div>
-
+            <Cabecalho />
             <div className='p4-text-titulo'>
                 <h1 className='p4-titulo'>
                     Cadastro de novos veículos
@@ -162,9 +155,7 @@ export default function Index() {
                                     <input type='file' id='imagemCapa' onChange={e => setImagem(e.target.files[0])} />
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
                 <button className="p4-btn-registrar" onClick={salvarClick}> Resgistrar </button>

@@ -4,9 +4,9 @@
     background-image: url('../../../public/assets/img/image17.jpg');
     height: 100vh;  
     background-size: 100%;
-    background-repeat: no-repeat;
-    
-}.p4-cabeçalho{
+    background-repeat: no-repeat;  
+}
+.p4-cabeçalho{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -299,4 +299,71 @@ input {
     .p4-background {
         margin-left: 20em;
     }
+
+    @media(max-width: 1280px){
+        
+        .p4-background {
+            display: flex;
+            flex-direction: column;
+            width: 65.7em;
+            height: 40em;
+            margin-left: 7em;
+            margin-top: 3em;
+        
+            background: #dfdfdfb8;
+            border-radius: 2.8em;
+        }
+        .p4-titulo{
+            margin-top: 1em;
+            width: 450px;
+            height: 102px;
+            text-align: center;
+            padding-top: 1.4em;
+            font-size: 1.5em;
+            padding-left: 1em;
+            padding-right: 1em;
+            color: #FFFFFF;
+            
+            background: #044886;
+            border-radius: 66px;
+            font-family:'inter';
+        }
+        .p4-p1{
+            margin-top: -5.5em;
+            margin-left: -5.6em;
+            font-size: 1.2em;
+            font-family:'inter';
+            margin-bottom: 0.5em;
+        }
+        .p4-p2{
+            font-size: 1.2em;
+            margin-top: -0.8em;
+            margin-left: -5.6em;
+            font-family:'inter';
+        }
+        .p4-p3{
+            margin-top: 1em;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+            margin-left: -5.6em;
+            font-family:'inter';
+        }
+        .p4-p4{
+            font-size: 1.2em;
+            margin-top: 1em;
+            margin-left: -5.7em;
+            margin-bottom: 0.5em;
+            font-family:'inter';
+        }
+        .p4-container{ 
+            display: flex;
+            flex-direction: column; 
+            background-image: url('../../../public/assets/img/image17.jpg');
+            height: 100vh;  
+            background-size: 125%;
+            background-repeat: no-repeat;  
+        }
+    }
 }
+
+
