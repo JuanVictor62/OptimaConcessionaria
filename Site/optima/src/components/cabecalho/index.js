@@ -8,7 +8,7 @@ export default function Index(){
                 <img class="f2-logo" src="./assets/img/logo.svg" alt=''/> 
             </Link>
             
-            <Link to="/" class="f2-botao">
+            <Link to="/pagecarros" class="f2-botao">
                 Voltar
             </Link>
     </div>

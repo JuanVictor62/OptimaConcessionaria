@@ -47,7 +47,7 @@ export async function buscarPorNome(nome){
 
 export async function alterarVeiculo(id, modelo, marca, valor,placa, anofab, km, codigo, classe, imagem){
     const resposta = await api.put(`/veiculo`, {
-        id:     id,
+        id: id,
         modelo: modelo,
         marca: marca,
         valor: valor,
