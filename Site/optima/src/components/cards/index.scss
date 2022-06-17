@@ -158,21 +158,21 @@
     }
 }
 
-    @media(max-width:1280px){
+    @media(max-width:1280px ){
     .abc {
         display: flex;
         flex-wrap: wrap;
     .carro-1 {
-        margin-left: 3.8em;
-        width: 20%;
+        margin-left: 10em;
+        width: 15%;
     }
     .card-c1{
         position: relative;
         top: 10em;
-        margin-left: -5em;
+        margin-left: -2em;
         margin-bottom: 7em;
-        width: 378px;
-        height: 408px;
+        width: 450px;
+        height: 510px;
         
         background: #E7E7E7;
         padding-top: 0.6em;
