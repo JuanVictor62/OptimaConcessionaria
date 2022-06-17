@@ -98,12 +98,6 @@
 }
 
 @media(max-width:1920px){
-    .carros-todos {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 50%  ;
-    }
     .title-c1 {
         display: flex;
         justify-content: center;
@@ -114,10 +108,12 @@
     .abc {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 3.5em;
     }
     .carro-1 {
         margin-left: 3.8em;
         width: 21%;
+        height: 500px;
     }
     .f1-r-d1 {
         margin-right:2em ;
@@ -131,7 +127,15 @@
         align-items: center;
     }
     .card-c1 {
-        height: 32em;
+        position: relative;
+        top: 10em;
+        margin-left: -6em;
+        width: 400px;
+        height: 510px;
+        
+        background: #E7E7E7;
+        padding-top: 0.6em;
+        border-radius: 20px;
     }
     .f1-r-tpc2 {
         margin-left: 2em;
@@ -162,16 +166,17 @@
     .abc {
         display: flex;
         flex-wrap: wrap;
+        width: 150%;
     .carro-1 {
-        margin-left: 10em;
+        margin-left: 9em;
         width: 15%;
     }
     .card-c1{
         position: relative;
         top: 10em;
-        margin-left: -2em;
+        margin-left: -6em;
         margin-bottom: 7em;
-        width: 450px;
+        width: 400px;
         height: 510px;
         
         background: #E7E7E7;
@@ -206,7 +211,8 @@
         -webkit-transition: all 0.5s ease;
     }
     .card-3-c1 {
-        margin-left: 14em;
+        margin-left: 17em;
+        width: 5em;
     }
     
     .icon-lixeira {
