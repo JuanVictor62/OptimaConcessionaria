@@ -24,9 +24,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      
-      
-        
     }
     
     .f2-logo62{
@@ -139,7 +136,6 @@
         padding-top: 0.6em;
         border-radius: 20px;
     }
-    
     .car-c1{
         height: 217px;
         background: #C4C4C4;
@@ -155,7 +151,6 @@
         background-color: #E7E7E7;
         border-radius: 10px;
     }
-    
     .title-c1{
         display: flex;
         justify-content: left;
@@ -173,14 +168,45 @@
         line-height: 2em;
         margin-left:1em ;
     }
-    
     .card-3-c1 {
         margin-left: 14em;
     }
-    
+    .carro-1{
+        display: flex;
+        flex-direction: row;
+    }
+    .b-marca, .b-codigo-c1, .ix-img, .name-c1, .title-c1,.card-3-c1 {
+        -webkit-transition: all 0.5s ease;
+    }
 
-/////////////// RODAPE ////////////////
+    .carro-1:hover {
+        .b-marca {
+            color: #044886;
+            transition: 0.4s;
+        }
+        .b-codigo-c1 {
+            color: #044886;
+            transition: 0.4s;
+        }
+        .ix-img {
+            transition: 0.4s;
+            transform: scale(1.05);
+        }
+        .title-c1 {
+            font-size: 1.4em;
+            transition: 0.4s;
+            font-weight: bold;
+        }
 
+        .icon-lixeira, .icon-edit {
+            visibility: visible;
+        }
+
+        
+    }
+
+
+///////////////* RODAPE *///////////////
 
     .f1-rodape {
         display: flex;
@@ -343,65 +369,6 @@
         font-family: 'inter';
     }
 
-    .carro-1
-    {
-        display: flex;
-        flex-direction: row;
-    }
-    .b-marca, .b-codigo-c1, .ix-img, .name-c1, .title-c1,.card-3-c1 {
-        -webkit-transition: all 0.5s ease;
-    }
-
-    .carro-1:hover {
-        .b-marca {
-            color: #044886;
-            transition: 0.4s;
-        }
-        .b-codigo-c1 {
-            color: #044886;
-            transition: 0.4s;
-        }
-        .ix-img {
-            transition: 0.4s;
-            transform: scale(1.05);
-        }
-        .title-c1 {
-            font-size: 1.4em;
-            transition: 0.4s;
-            font-weight: bold;
-        }
-
-        .icon-lixeira, .icon-edit {
-            visibility: visible;
-        }
-
-        
-    }
-
-    .icon-lixeira {
-        visibility: hidden;
-
-        height: 1.5em;
-        width: auto;
-        position: relative;
-        left: 14.7em;
-        top: 8em;
-        cursor: pointer;
-        z-index: 1;
-    }
-
-    .icon-edit {
-        visibility: hidden;
-
-        height: 1.5em;
-        width: auto;
-        position: relative;
-        left: 15.5em;
-        top: 8em;
-        cursor: pointer;
-        z-index: 1;
-    }
- 
 //////////////////////////////////////////////////////////////    
     
     @media (max-width:1440px) {
@@ -445,8 +412,6 @@
         .card-c1 {
             margin-left: -1em;
         }
-    
-        
     }
     
     ::-webkit-scrollbar-thumb {
@@ -467,7 +432,6 @@
             width: 50%  ;
         }
 
-        
         .title-c1 {
             display: flex;
             justify-content: center;
@@ -534,16 +498,166 @@
     }
 
     @media(max-width: 1280px) {
+        .f2-cabecalho{
+            display: flex;
+            justify-content: space-between;
+            height: 4em;
+            width: 123em;
+            z-index: -1;
+            background-color: black;
+        }
         .f2-1-1 {
             margin-left: -5em;
         }
 
         .f3-botao {
-            left: 13em;
+            left: 20em;
         }
 
         .f2-botao {
-            left: 1em;
+            left: -5em;
+        }
+        ///////// RODAPEE /////////////////////
+        .f1-rodape {
+            display: flex;
+            flex-direction: row;
+            height: 14em;
+            background-color: #3D3D3D;
+            width: 123em ;
+            margin-top: 10em;
+        }
+        /* Primeira Div */
+        
+        .f1-r-d1{
+            display: flex;
+            flex-direction: column;
+        }
+        .f1-r-logo{
+            margin-left: 3em;
+            margin-top: 2em;
+            margin-bottom: 6em;
+            height: 5em;
+        }
+        .f1-r-in-18 {
+            position: relative;
+            bottom: 1em;
+            color: #a8a8a8;
+            margin-left: 0.5em;
+            font-family: 'inter';
+        }
+        .f1-bt-aa {
+            position: absolute;
+            width: 121px;
+            height: 120px;
+            left: 0px;
+            top: 28px;
+        
+            background: rgba(196, 196, 196, 0.7);
+            border-radius: 15px;
+        
+            z-index: -1;
+        
+            font-family: 'inter';
+        }
+        .f1-bt-a {
+            margin-top: 2em;
+            margin-left: 1em;
+        }
+        .bg {
+            margin-left: 1em;
+        }
+        
+        /* Segunda Div */
+
+        .f1-r-d2{
+            display: flex;
+            flex-direction: row;
+        }
+        .f1-r-img1{
+            height: 2.5em;
+            margin-left: 3em;
+            margin-top: 5em;
+        }
+        .f1-r-img2{
+            height: 2.5em;
+            margin-left: 2em;
+            margin-top: 4.8em;
+        }
+        .f1-r-img3{
+            height: 2.7em;
+            margin-left: 1.5em;
+            margin-top: 4.7em;
+        }
+        .f1-r-img-4{
+            position: relative;
+            right: 7em;
+        
+            margin-top: 2em;
+            height: 3em;
+            width: auto;
+        }
+        /*Terceira Div (Topicos) */
+        .f1-r-tpc{
+            display: flex;
+            flex-direction: row;
+            margin-left: 2.5em;
+            color: #fff;
+            font-family: 'inter';
+            margin-top: 2em;
+        }
+        /* Primeiro Topico */
+        .f1-r-tpc1{
+            margin-right: 5em;
+        
+        }
+        .f1-in-19{
+            margin-bottom: 1em;
+        }
+        .f1-in-20{
+            text-decoration: none;
+            margin-bottom: 0.5em;
+            color: #e0e0e0;
+        }
+        .f1-in-20:hover{
+            text-decoration: underline;
+        }
+        .f1-r-tpc2{
+            margin-right: 3.5em;
+        }
+        /* Terceira Div */
+        .f1-r-c4{
+            display: flex;
+            flex-direction: row;
+            margin-right: 15em;
+        }
+        .f1-r-c4-1{
+            margin-left: -5em;
+        }
+        .f1-r-in-21{
+            position: relative;
+            right: 7.5em;
+        
+            color:rgb(236, 236, 236);
+            font-family: 'inter';   
+            margin-top: 3em;
+            margin-left: 0.8em;
+            margin-bottom: 3em;
+        }
+        .f1-r-in-22{
+            position: relative;
+            right: 7em;
+        
+            color: #e0e0e0;
+            font-family: 'inter';
+            font-size: 0.9em;
+            margin-bottom: 1em;
+        }
+        
+        .f1-r-in-23{
+            margin-top: 2.5em;
+            font-size: 0.9em;
+            color: white;
+            font-family: 'inter';
         }
     }
 }
