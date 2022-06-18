@@ -99,29 +99,46 @@
     }
 
 
-
-
-@media (max-width:1280px){
+@media (max-width:1920px){
     .f2-fundo {
         background-image: url(../../../public/assets/img/background-login.png);
         background-repeat: no-repeat;
-        height: 92vh;
+        height: 60.5em;
+        background-size: 100%;
         padding-top: 5em;
-
     }
 
     .f2-painellogin {
         background-color: #DFDFDF90;
         text-align: center;
         margin-top: 8em;
+        width: 60em;
 
-        margin-left: 22em;
-        margin-right: 22em;
+        margin-left: 28em ;
 
         padding-bottom: 5em;
-
-
         border-radius: 30px;
     }
+}
+
+@media (max-width:1280px){
+    .f2-fundo {
+        background-image: url(../../../public//assets/img/background-login.png);
+        background-repeat: no-repeat;
+        height: 92.2vh;
+        background-size: 115%;
+        padding-top: 5em;
+    .f2-painellogin {
+        background-color: #DFDFDF90;
+        text-align: center;
+        margin-top: 8em;
+        width: 60em;
+
+        margin-left: 9em;
+
+        padding-bottom: 5em;
+        border-radius: 30px;
+    }
+}
 }
 }

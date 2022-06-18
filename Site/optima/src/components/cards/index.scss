@@ -99,6 +99,24 @@
 
 @media(max-width:1920px){
 
+    .f2-1-1{
+        position: relative;
+        left: 50em;
+        margin: 0px;
+        top: -3.2em;
+        padding: 1em 1em 1em 1em;
+    }
+    
+    .f2-img{
+        position: relative;
+        left: 47.5em;
+        height: 1em;
+        width: auto;
+        top: -3em;
+        
+        
+    }
+
     .abc {
         display: flex;
         flex-wrap: wrap;
@@ -168,6 +186,25 @@
 }
 
     @media(max-width:1280px ){
+
+    .f2-1-1{
+        position: relative;
+        left: 50em;
+        margin: 0px;
+        top: -3.2em;
+        padding: 1em 1em 1em 1em;
+    }
+    
+    .f2-img{
+        position: relative;
+        left: 47.5em;
+        height: 1em;
+        width: auto;
+        top: -3em;
+        
+        
+    }
+
     .abc {
         display: flex;
         flex-wrap: wrap;
