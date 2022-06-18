@@ -15,7 +15,6 @@ export default function Index() {
     const [placa, setPlaca] = useState('');
     const [anofab, setAnoFab] = useState(0);
     const [km, setKm] = useState(0);
-    const [codigo, setCodigo] = useState(0);
     const [classe, setClasse] = useState('');
     const [imagem, setImagem] = useState();
     const [id, setId] = useState(0);
@@ -36,7 +35,6 @@ export default function Index() {
         setPlaca(resposta.placa);
         setAnoFab(resposta.anofab);
         setKm(resposta.km);
-        setCodigo(resposta.codigo);
         setClasse(resposta.classe);
         setImagem(resposta.imagem);
         setId(resposta.id);
@@ -51,7 +49,7 @@ export default function Index() {
 
 
             if (id === 0) {
-                const novoVeiculo = await cadastrarVeiculo(modelo, marca, valor, placa, anofab, km, codigo, classe, usuario);
+                const novoVeiculo = await cadastrarVeiculo(modelo, marca, valor, placa, anofab, km, classe, usuario);
                 const r = await enviarImagemVeiculo(novoVeiculo.id, imagem);
 
                 setId(novoVeiculo.id);
@@ -59,7 +57,7 @@ export default function Index() {
             }
 
             else {
-                await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, codigo, classe, usuario,imagem);
+                await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, classe, usuario,imagem);
 
                 if(typeof(imagem) == 'object')
                     await enviarImagemVeiculo(id, imagem);
@@ -129,10 +127,7 @@ export default function Index() {
                         </div>
 
 
-                        <div>
-                            <p className='p4-p6'> Código do Carro: </p>
-                            <input className='p4-input-6' type="number" value={codigo} onChange={e => setCodigo(e.target.value)} />
-                        </div>
+
 
                         <div>
                             <p className='p4-p8'> Placa: </p>

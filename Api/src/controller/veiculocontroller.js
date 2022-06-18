@@ -22,8 +22,6 @@ server.post('/veiculo', async (req, resp) => {
             throw new Error('Ano de Fabricação do veiculo é obrigatorio!');
         if (!novoVeiculo.km)
             throw new Error('Quilometragem do veiculo é obrigatorio!');
-        if (!novoVeiculo.codigo)
-            throw new Error('Codigo do veiculo é obrigatorio!');
         if (!novoVeiculo.classe)
             throw new Error('Classe do veiculo é obrigatorio!');
 
@@ -117,8 +115,6 @@ server.put('/veiculo', async (req, resp) => {
             throw new Error('Ano de Fabricação do veiculo é obrigatorio!');
         if (!veiculo.km)
             throw new Error('Quilometragem do veiculo é obrigatorio!');
-        if (!veiculo.codigo)
-            throw new Error('Codigo do veiculo é obrigatorio!');
         if (!veiculo.classe)
             throw new Error('Classe do veiculo é obrigatorio!');
 

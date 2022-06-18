@@ -299,7 +299,7 @@ input {
     .p4-background {
         margin-left: 20em;
     }
-
+}
     @media(max-width: 1280px){
         
         .p4-background {
@@ -364,6 +364,11 @@ input {
             background-repeat: no-repeat;  
         }
     }
+@media (max-width:1920px) {
+    .imagemCapa{
+        height: 140px;
+        width: auto;
+        margin-right: 7em;
+        
+    }
 }
-
-

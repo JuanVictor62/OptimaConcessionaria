@@ -3,10 +3,10 @@ import { con } from "./connection.js";
 /*inserir veiculo*/
 export async function inserirVeiculo(veiculo) {
     const comando =
-        `INSERT INTO tb_veiculo (ds_modelo, ds_marca, vl_valor, ds_placa, dt_anofab, vl_km, nr_codigo, ds_classe)
-                                     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+        `INSERT INTO tb_veiculo (ds_modelo, ds_marca, vl_valor, ds_placa, dt_anofab, vl_km, ds_classe)
+                                     VALUES (?, ?, ?, ?, ?, ?, ?)`
 
-    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe]);
+    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km,veiculo.classe]);
     veiculo.id = resposta.insertId;
     return veiculo;
 }
@@ -38,7 +38,6 @@ export async function listarTodosVeículos() {
                 ds_placa 	 	        placa,
                 dt_anofab               anofab,
                 vl_km      	            km,
-                nr_codigo               codigo,
                 ds_classe 		        classe,
                 img_veiculo             imagem
     from        tb_veiculo`
@@ -78,13 +77,12 @@ export async function alterarVeiculo(id, veiculo) {
      ds_placa 	 	 =      ?,
      dt_anofab       =	    ?,
      vl_km      	 =      ?,
-     nr_codigo       =      ?,
      ds_classe 		 =      ?,
      img_veiculo     =      ?
 
     where id_veiculo = ?`
 
-    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.codigo, veiculo.classe, veiculo.imagem, veiculo.id])
+    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.classe, veiculo.imagem, veiculo.id])
     return resposta.affectedRows;
 }
 
@@ -110,7 +108,6 @@ export async function BuscarPorID(id) {
                 ds_placa 	 	        placa,
                 dt_anofab               anofab,
                 vl_km      	            km,
-                nr_codigo               codigo,
                 ds_classe 		        classe,
                 img_veiculo             imagem
     FROM        tb_veiculo

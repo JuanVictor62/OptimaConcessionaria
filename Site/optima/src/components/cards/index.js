@@ -1,5 +1,5 @@
 import './index.scss';
-import {listarTodos, apagarVeiculo, carregarVeiculos } from '../../api/veiculoAPI';
+import {listarTodos, apagarVeiculo} from '../../api/veiculoAPI';
 import '../../pages/commom/commom.css'
 import { Link, useNavigate } from 'react-router-dom';
 import  {  confirmAlert  }  from  'react-confirm-alert';
@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 
 
     export default function Index(){
+        
+        const [veiculos, setVeiculos] = useState([]);
         useEffect(()  => {
             carregarVeiculos();
         }, [])
@@ -15,14 +17,15 @@ import { useEffect, useState } from 'react';
             const resp = await listarTodos();
             setVeiculos(resp); 
         }
-        const [veiculos, setVeiculos] = useState([]);
-        const [filtro, setFiltro] = useState('');
+
+
     
         const navigate = useNavigate()
     
         async function editarVeiculo(id){
             navigate(`/alterarcarro/${id}`);
         }
+
         function mostrarImagem(imagem) {
             return `http://localhost:5000/${imagem}`
         }

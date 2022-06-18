@@ -98,9 +98,30 @@
         outline: 0;
     }
 
-    @media(max-width:1920px)
-    {
-        .f2-fundo {
-        }
+
+
+
+@media (max-width:1280px){
+    .f2-fundo {
+        background-image: url(../../../public/assets/img/background-login.png);
+        background-repeat: no-repeat;
+        height: 92vh;
+        padding-top: 5em;
+
     }
+
+    .f2-painellogin {
+        background-color: #DFDFDF90;
+        text-align: center;
+        margin-top: 8em;
+
+        margin-left: 22em;
+        margin-right: 22em;
+
+        padding-bottom: 5em;
+
+
+        border-radius: 30px;
+    }
+}
 }

@@ -7,11 +7,14 @@ import { func } from 'prop-types';
 import Cards from '../../components/cards'
 
 export default function index() {
+    const [veiculos, setVeiculos] = useState([]);
     const [filtro, setFiltro] = useState('');
+    
     async function filtrar(){
         const resp = await buscarPorNome(filtro);
         setVeiculos(resp)
     }
+
     return (
         <main className="container">
             <div className="f2-cabecalho">
