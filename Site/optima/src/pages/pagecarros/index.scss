@@ -659,4 +659,19 @@
             font-family: 'inter';
         }
     }
+
+    @media (max-width:414px) {
+        .f2-cabecalho{
+            width: 25.9em;
+
+            .f3-botao{
+                left: 1.5em;
+            }
+
+            .f2-botao{
+                left: 2em;
+            }
+        }
+        
+    }
 }

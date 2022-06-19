@@ -1,6 +1,7 @@
 .abc {
     display: flex;
     flex-wrap: wrap;
+
 .carro-1 {
     margin-left: 3.8em;
     width: 21%;
@@ -197,10 +198,10 @@
     
     .f2-img{
         position: relative;
-        left: 47.5em;
+        left: 60.7em;
         height: 1em;
         width: auto;
-        top: -3em;
+        top: -4.8em;
         
         
     }
@@ -309,5 +310,51 @@
             visibility: visible;
         }
     }  
+    }
+
+    @media (max-width: 414px){
+        .f2-cabecalho{
+            
+            .f2-logo62{
+                height: 4em;
+                margin-top: 0.2em;
+                margin-left: 0em;
+            }
+        }
+
+        .f2-1-1{
+            position: relative;
+            left: 11.5em;
+            margin: 0px;
+            top: 1.5em;
+            padding: 1em 1em 1em 1em;
+            border: 1px solid #000 !important;
+            
+            
+        }
+        
+        .f2-img{
+            position: relative;
+            left: 22em;
+            height: 1em;
+            width: auto;
+            top: -0.1em;
+            
+            
+        }
+
+        .abc{
+            flex-direction: column;
+            
+            margin-left: -5em;
+        }
+        
+        .card-c1{
+            .b-codigo-c1{
+                margin-left: -1em;
+            }
+
+            
+        }
     }
     }

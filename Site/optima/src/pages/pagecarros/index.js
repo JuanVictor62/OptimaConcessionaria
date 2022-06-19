@@ -21,8 +21,7 @@ export default function index() {
                 <Link to="/">
                     <img className="f2-logo62" src="../../assets/img/Logo.svg" alt='' />
                 </Link>
-                <div className='search'>
-                </div>
+
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
 
                     <Link to="/" className="f2-botao">Voltar</Link>
