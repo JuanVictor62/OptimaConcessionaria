@@ -672,6 +672,97 @@
                 left: 2em;
             }
         }
+
+        .f1-rodape{
+            width: 26em;
+            height: 23.8em;
+            margin-bottom: 0em;
+            margin-right: 0em;
+
+            .f1-r-logo{
+                position: relative;
+                right: 2em;
+                width: 3.5em;
+                height: 2em;
+            }
+
+            .f1-r-in-18{
+                margin-top: 10em;
+                margin-left: 1em;
+            }
+
+            .f1-r-d2{
+                margin-left: -8.5em;
+                margin-right: 0px;
+
+                .f1-r-img1{
+                    width: 1.5em;
+                    height: 1.5em; 
+                }
+
+                .f1-r-img2{
+                    position: relative;
+                    top: 3em;
+                    left: -2.5em;
+                    margin-top: 5em;
+                    margin-left: 1em;
+                    width: 1.5em;
+                    height: 1.5em; 
+                }
+
+                .f1-r-img3{
+                    position: relative;
+                    top: 5.5em;
+                    left: -5em;
+                    margin-top: 5em;
+                    margin-left: 1em;
+                    width: 1.5em;
+                    height: 1.5em; 
+                }
+            }
+
+            .f1-r-tpc{
+                margin-left: -2em;
+                .f1-r-tpc1{
+                    position: relative;
+                    left: 1.5em;
+                    margin-left: -1em;
+                }
+
+                .f1-r-tpc2{
+                    margin-left: -2em;
+                }
+
+                .f1-r-tpc3{
+                    margin-left: -2.5;
+                }
+            }
+
+            .f1-r-c4-1{
+                position: relative;
+                left: -45em;
+                .f1-r-c4{
+                    display: none;
+                }
+
+                .f1-r-in-22{
+                    position: relative;
+                    top: 20em;
+                    left: 41.8em;
+                }
+
+                .f1-r-in-23{
+                    position: relative;
+                    top: 18em;
+                    left: 41.8em;
+                    width: 15em;
+                }
+            }   
+
+
+
+
+        }
         
     }
 }
