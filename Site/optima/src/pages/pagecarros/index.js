@@ -22,11 +22,6 @@ export default function index() {
                     <img className="f2-logo62" src="../../assets/img/Logo.svg" alt='' />
                 </Link>
                 <div className='search'>
-                    <form>
-                        <input className="f2-1-1" type="text" placeholder="Buscar" value={filtro} onChange={e => setFiltro(e.target.value)} />
-
-                        <img className="f2-img" src="../../assets/img/image 25.png" onClick={filtrar} alt='' />
-                    </form>
                 </div>
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
 

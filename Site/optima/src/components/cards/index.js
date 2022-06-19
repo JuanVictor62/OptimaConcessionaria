@@ -1,5 +1,5 @@
 import './index.scss';
-import {listarTodos, apagarVeiculo} from '../../api/veiculoAPI';
+import {listarTodos, apagarVeiculo, buscarPorNome} from '../../api/veiculoAPI';
 import '../../pages/commom/commom.css'
 import { Link, useNavigate } from 'react-router-dom';
 import  {  confirmAlert  }  from  'react-confirm-alert';
@@ -7,6 +7,12 @@ import { useEffect, useState } from 'react';
 
 
     export default function Index(){
+        const [filtro, setFiltro] = useState('');
+
+        async function filtrar(){
+            const resp = await buscarPorNome(filtro);
+            setVeiculos(resp)
+        }
         
         const [veiculos, setVeiculos] = useState([]);
         useEffect(()  => {
@@ -51,6 +57,11 @@ import { useEffect, useState } from 'react';
 
         return(
             <div className='abc'>
+
+            <form>
+                <input className="f2-1-1" type="text" placeholder="Buscar" value={filtro} onChange={e => setFiltro(e.target.value)} />
+                    <img className="f2-img" src="../../assets/img/image 25.png" onClick={filtrar} alt='' />
+            </form>
             {veiculos.map(item => 
                     <div className="carro-1">
                         

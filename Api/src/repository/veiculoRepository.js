@@ -56,7 +56,12 @@ export async function buscarPorNome(nome) {
         `select 	id_veiculo      id,
 		            ds_modelo                nome,
 		            ds_marca                 marca,
-		            vl_valor                 valor
+		            vl_valor                 valor,
+                    ds_placa 	 	        placa,
+                    dt_anofab               anofab,
+                    vl_km                   km,	
+                    ds_classe               classe,
+                    img_veiculo             imagem
        from tb_veiculo
 	            where ds_modelo    like ? `
 

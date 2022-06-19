@@ -102,17 +102,7 @@
         padding-right: 5em;
     }
     
-    .f2-img {
-        margin-top: 0.5em;
-        height: 1em;
-        width: auto;
-    
-        position: relative;
-        right: 3em;
-        top: 0.2em;
-    
-        cursor: pointer;
-    }
+
 
     .carros{
         display: flex;
@@ -425,6 +415,11 @@
 
     @media(max-width:1920px){
 
+        .f3-botao{
+            position: relative;
+            left: 25em; 
+        }
+
         .carros-todos {
             display: flex;
             flex-wrap: wrap;
@@ -480,8 +475,8 @@
 
         .f2-botao {
             position: relative;
-            right: 11em;
             margin-top: 1em;
+            right: 2em;
         }
 
         .f1-r-in-23 {
