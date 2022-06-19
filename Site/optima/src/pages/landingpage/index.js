@@ -166,7 +166,7 @@ export default function index() {
 
                             <h3 className='f1-in-17'>A partir de: R$ 92.000</h3>
 
-                            <a className='tag-a' href="https://api.whatsapp.com/send?phone=5511988749207"> <button className='f1-bt-6'>Estou Interessado </button>
+                            <a className='tag-  a' href="https://api.whatsapp.com/send?phone=5511988749207"> <button className='f1-bt-6'>Estou Interessado </button>
                             </a>
 
                         </div>
