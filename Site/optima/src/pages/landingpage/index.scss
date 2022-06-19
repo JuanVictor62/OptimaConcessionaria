@@ -841,13 +841,29 @@
         color: #044886;
     }
 
-    @media (max-width:px) {
+    @media (max-width:414px) {
         .f1 {
             
             background-size: 60%;
             background-position-x: -15em;
             background-attachment: fixed;
+        
+
+        .f1-blue{
+            left: -13em;
+            top: -2em;
         }
+
+        .f1-log{
+            left: 1em;
+            top: 1em;
+        }
+
+        .f2-botao{
+            left: 19em;
+            top: 1.5em;
+        }
+    }
 
         .aa {
             margin-top: 22em;
@@ -909,6 +925,8 @@
     @media (max-width:414px) {
 
         /* FAIXA 'SOBRE A OPTIMA' */
+        .landing-page{
+            width: 120em;
         .f1-f2 {
             display: flex;
             flex-direction: row;
@@ -1502,7 +1520,7 @@
             width: 10%;
         }
     }
-
+}
     @media(max-width:1920px)
     {
         .landing-page {
