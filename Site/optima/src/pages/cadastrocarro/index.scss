@@ -892,4 +892,114 @@ input {
         font-family:'inter';
     }
 }
+
+@media (max-width:414px) {
+    .p4-container{
+
+        height: 150vh;
+        background-size: 500%;
+
+        .p4-background{
+            height: 50vh;
+        }
+
+    .p4-text-titulo{
+        background: #044886;
+        border-radius: 66px;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1.4em;
+        width: 20em;
+        height: 5em;
+        border-radius: 3em;
+
+        margin-left: 3em;
+        margin-top: 1em;
+        .p4-titulo{
+            position: relative;
+            background-color: #ffffff00;
+            width: 25em;
+            top: -1.4em;
+        }
+    }
+
+    .p4-background{
+        display: flex;
+        flex-direction: column;
+        width: 24em;
+        height: 65em;
+        margin-left: 1em;
+        margin-top: 3em;
+        background: rgba(223, 223, 223, 0.7215686275);
+        border-radius: 2.8em;
+
+        .p4-campos{
+            flex-direction: column;
+            width: 24em;
+            margin-left: 1em;
+        }
+
+        .p4-input-1{
+            width: 20em;
+        }
+
+        .p4-input-2{
+            width: 20em;
+        }
+
+        .p4-input-3{
+            width: 20em;
+        }
+
+        .p4-input-4{
+            width: 20em;
+        }
+
+        .p4-p5{
+            position: relative;
+            top: 13.5em;
+            right: 5em;
+        }
+
+        .p4-input-5{
+            position: relative;
+            top: 16em;
+            right: 6em;
+            width: 20em;
+        }
+
+        .p4-p8{
+            position: relative;
+            top: 13.5em;
+            right: 5em;
+        }
+
+        .p4-input-8{
+            position: relative;
+            top: 16em;
+            right: 5.7em;
+        }
+
+        .p4-p7{
+            position: relative;
+            top: 13.5em;
+            right: 4.5em;
+        }
+
+        .p4-edit-img{
+            position: relative;
+            top: 16.5em;
+            right: 6em;
+
+        }
+
+    }
+
+    .p4-btn-registrar{
+        position: relative;
+        top: 15em;
+        right: 22.5em;
+    }
+}
+}
 }
