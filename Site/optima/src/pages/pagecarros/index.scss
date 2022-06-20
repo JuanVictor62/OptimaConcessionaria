@@ -86,6 +86,27 @@
         width: 100px;
         height: 33px;
     }
+
+    .f4-botao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        left: 13em;
+        top: 1em;
+        text-align: center;
+        
+        text-decoration: none;
+        font-family: 'k2d';
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 2em;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        width: 100px;
+        height: 33px;
+    }
     
     
 
@@ -304,8 +325,6 @@
     
     }
     
-    
-    
     .f1-in-19{
         margin-bottom: 1em;
     }
@@ -448,10 +467,6 @@
             margin-right:2em ;
         }
 
-        .f1-r-d2 {
-           
-        }
-
         .car-c1 {
             display: flex;
             justify-content: center;
@@ -508,11 +523,15 @@
         }
 
         .f3-botao {
-            left: 20em;
+            left: 30em;
         }
 
         .f2-botao {
-            left: -5em;
+            left: 15em;
+        }
+
+        .f4-botao{
+            left: -3em;
         }
         ///////// RODAPEE /////////////////////
         .f1-rodape {

@@ -1,6 +1,7 @@
 import './index.scss';
 import '../commom/commom.css';
 import { Link, useNavigate } from 'react-router-dom';
+import storage from 'local-storage'
 import {buscarPorNome} from '../../api/veiculoAPI'
 import { useEffect, useState } from 'react';
 import { func } from 'prop-types';
@@ -9,6 +10,21 @@ import Cards from '../../components/cards'
 export default function index() {
     const [veiculos, setVeiculos] = useState([]);
     const [filtro, setFiltro] = useState('');
+
+    const navigate = useNavigate();
+
+    function sairClick() {
+        storage.remove('usuario-logado');
+        navigate('/')
+    }
+
+    useEffect(() => {
+        if(!storage('usuario-logado')){
+            navigate('/');
+        }
+
+
+    }, [])
     
     async function filtrar(){
         const resp = await buscarPorNome(filtro);
@@ -24,7 +40,8 @@ export default function index() {
 
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
 
-                    <Link to="/" className="f2-botao">Voltar</Link>
+                    <Link to="/" className="f2-botao">Voltar</Link> 
+                    <div onClick={sairClick} className='f4-botao'> Sair </div>
             </div>
 
             <Cards />

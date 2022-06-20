@@ -5,7 +5,7 @@ import storage from 'local-storage'
 import LoadingBar from 'react-top-loading-bar'
 import { login } from '../../api/usuarioAPI'
 import { useNavigate } from 'react-router-dom'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 export default function Index() {
     const [nome, setNome] = useState('');
@@ -15,6 +15,13 @@ export default function Index() {
 
     const navigate = useNavigate();
     const ref = useRef();
+
+    useEffect(() => {
+        if(storage('usuario-logado')){
+            navigate('/pagecarros')
+        }
+
+    }, [])
 
   async function entrarClick() {
     ref.current.continuousStart();
