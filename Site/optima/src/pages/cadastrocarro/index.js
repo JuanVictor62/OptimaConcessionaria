@@ -129,12 +129,12 @@ export default function Index() {
 
 
 
-                        <div>
+                        <div className='abcdef'>
                             <p className='p4-p8'> Placa: </p>
                             <input className='p4-input-8' type="text" value={placa} onChange={e => setPlaca(e.target.value)} />
                         </div>
 
-                        <div>
+                        <div className='abcdef'>
                             <p className='p4-p7'> Foto do Veículo: </p>
                             <div className='p4-edit-img'>
                                 <div className='upload-veiculo' onClick={escolherImagem} >

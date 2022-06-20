@@ -933,9 +933,12 @@ input {
         background: rgba(223, 223, 223, 0.7215686275);
         border-radius: 2.8em;
 
+        .abcdef{
+            width: 0px;
+        }
+
         .p4-campos{
             flex-direction: column;
-            width: 24em;
             margin-left: 1em;
         }
 
@@ -951,6 +954,10 @@ input {
             width: 20em;
         }
 
+        .p4-coluna-2{
+            margin-left: -1em;
+        }
+
         .p4-input-4{
             width: 20em;
         }
@@ -958,38 +965,35 @@ input {
         .p4-p5{
             position: relative;
             top: 13.5em;
-            right: 5em;
         }
 
         .p4-input-5{
             position: relative;
             top: 16em;
-            right: 6em;
+            right: 0.5em;
             width: 20em;
         }
 
         .p4-p8{
             position: relative;
             top: 13.5em;
-            right: 5em;
         }
 
         .p4-input-8{
             position: relative;
             top: 16em;
-            right: 5.7em;
+            right: 0.4em;
         }
 
         .p4-p7{
             position: relative;
             top: 13.5em;
-            right: 4.5em;
+            width: 15em;
         }
 
         .p4-edit-img{
             position: relative;
             top: 16.5em;
-            right: 6em;
 
         }
 
