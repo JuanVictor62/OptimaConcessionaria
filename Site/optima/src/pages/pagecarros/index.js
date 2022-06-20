@@ -40,7 +40,7 @@ export default function index() {
 
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
 
-                    <Link to="/" className="f2-botao">Voltar</Link> 
+            
                     <div onClick={sairClick} className='f4-botao'> Sair </div>
             </div>
 
