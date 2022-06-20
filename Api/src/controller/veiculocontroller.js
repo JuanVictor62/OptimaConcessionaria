@@ -10,9 +10,9 @@ const upload = multer({ dest: 'storage/fotos-carros' });
 server.post('/veiculo', async (req, resp) => {
     try {
         const novoVeiculo = req.body;
-        if (!novoVeiculo.modelo)
+        if (!novoVeiculo.modelo.trim())
             throw new Error('Modelo do veiculo é obrigatorio!');
-        if (!novoVeiculo.marca)
+        if (!novoVeiculo.marca.trim())
             throw new Error('Marca do veiculo é obrigatorio!');
         if (novoVeiculo.valor < 0 || undefined)
             throw new Error('Valor do veiculo é obrigatorio!');
@@ -103,11 +103,11 @@ server.put('/veiculo', async (req, resp) => {
         const id = req.params;
         const veiculo = req.body;
 
-        if (!veiculo.modelo)
+        if (!veiculo.modelo.trim())
             throw new Error('Modelo do veiculo é obrigatorio!');
-        if (!veiculo.marca)
+        if (!veiculo.marca.trim())
             throw new Error('Marca do veiculo é obrigatorio!');
-        if (veiculo.valor < 0 || undefined)
+        if (veiculo.valor.trim() < 0)
             throw new Error('Valor do veiculo é obrigatorio!');
         if (!veiculo.placa)
             throw new Error('Placa do veiculo é obrigatorio!');

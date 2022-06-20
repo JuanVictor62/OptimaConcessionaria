@@ -47,7 +47,7 @@ export default function Index() {
                 <div class="f2-painellogin">
                     <img class="f2-icon" src="../../assets/img/icon-usuario.png" alt=''/>
                     
-                    <p class="f2-user1">Usuario:</p>
+                    <p class="f2-user1">Usuário:</p>
                     <input class="f2-user2" type="text" id="login" value={nome} onChange={e => setNome(e.target.value)} />
 
                     <p class="f2-senha1">Senha:</p> 

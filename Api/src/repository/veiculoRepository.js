@@ -63,9 +63,10 @@ export async function buscarPorNome(nome) {
                     ds_classe               classe,
                     img_veiculo             imagem
        from tb_veiculo
-	            where ds_modelo    like ? `
+	            where ds_modelo    like ?
+                  or ds_marca like ? `
 
-    const [linhas] = await con.query(comando, [`%${nome}%`]);
+    const [linhas] = await con.query(comando, [`%${nome}%`, `%${nome}%`]);
     return linhas;
 }
 
@@ -82,12 +83,11 @@ export async function alterarVeiculo(id, veiculo) {
      ds_placa 	 	 =      ?,
      dt_anofab       =	    ?,
      vl_km      	 =      ?,
-     ds_classe 		 =      ?,
-     img_veiculo     =      ?
+     ds_classe 		 =      ?
 
     where id_veiculo = ?`
 
-    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.classe, veiculo.imagem, veiculo.id])
+    const [resposta] = await con.query(comando, [veiculo.modelo, veiculo.marca, veiculo.valor, veiculo.placa, veiculo.anofab, veiculo.km, veiculo.classe, veiculo.id])
     return resposta.affectedRows;
 }
 

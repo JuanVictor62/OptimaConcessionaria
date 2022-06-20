@@ -50,22 +50,24 @@ export default function Index() {
 
             if (id === 0) {
                 const novoVeiculo = await cadastrarVeiculo(modelo, marca, valor, placa, anofab, km, classe, usuario);
+                
                 const r = await enviarImagemVeiculo(novoVeiculo.id, imagem);
 
                 setId(novoVeiculo.id);
-                toast.dark(" 🚗 veiculo cadastrado com sucesso! ");
+                toast.dark(" 🚗 Veículo cadastrado com sucesso! ");
             }
 
             else {
-                await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, classe, usuario,imagem);
+                await alterarVeiculo(id, modelo, marca, valor, placa, anofab, km, classe, usuario);
 
-                if(typeof(imagem) == 'object')
+                console.log(typeof(imagem));
+                if (typeof(imagem) == 'object')
                     await enviarImagemVeiculo(id, imagem);
 
-                toast.dark(" 🚗 veiculo alterado com sucesso! ");
+                toast.dark(" 🚗 Veículo alterado com sucesso! ");
             }
         } catch (err) {
-            toast("Ocorreu um erro, tente novamente!");
+            toast(err.response.data.erro);
         }
     }
 
@@ -106,7 +108,7 @@ export default function Index() {
                         </div>
                         <div>
                             <p className='p4-p3'> Ano de Fabricação: </p>
-                            <input className='p4-input-3' type="number" value={anofab} onChange={e => setAnoFab(e.target.value)} />
+                            <input className='p4-input-3' type="text" value={anofab} onChange={e => setAnoFab(e.target.value)} />
                         </div>
                         <div>
                             <p className='p4-p4'> Quilometragem: </p>
@@ -123,7 +125,7 @@ export default function Index() {
                     <div className='p4-coluna-2'>
                         <div>
                             <p className='p4-p5'> Valor: </p>
-                            <input className='p4-input-5' type="number" value={valor} onChange={e => setValor(e.target.value)} />
+                            <input className='p4-input-5' type="text" value={valor} onChange={e => setValor(e.target.value)} />
                         </div>
 
 

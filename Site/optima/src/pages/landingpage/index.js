@@ -20,7 +20,7 @@ export default function index() {
                     <div className='f1-text'>
 
                         <h1 className='f1-in-1'>Procurando seu semi-novo?</h1>
-                        <p className='f1-in-2'>A optima te oferece uma váriação de modelos, com preços acessivéis e serviços de
+                        <p className='f1-in-2'>A optima te oferece uma váriação de modelos, com preços acessíveis e serviços de
                             qualidade que você só encontra aqui.</p>
 
                         <div className='f1-contato'>
@@ -49,7 +49,7 @@ export default function index() {
                     <div className='f1-info'>
                         <div className='f1-info2'>
                             <p className='f1-in-4'>
-                                Atuando no mercado veicular desde 2013 e atendendo mais de 17 estados, a optima conta com uma
+                                Atuando no mercado veicular desde 2013 e atendendo mais de 17 estados, a <b> Optima </b> conta com uma
                                 equipe de profissionais capacitados e de pronto atendimento, agrupando confiabilidade, conforto
                                 e prontidão. </p>
                             <p className='f1-in-5'>

@@ -364,7 +364,6 @@
     @media (max-width:1440px) {
     
         .f2-cabecalho {
-            width: 137vh;
         }
     
         .f1-bts {
@@ -450,7 +449,7 @@
         }
 
         .f1-r-d2 {
-            margin-right: 13em;
+           
         }
 
         .car-c1 {
@@ -470,7 +469,7 @@
 
         .f1-r-c4-1 {
             position: relative;
-            left: 30em;
+            //left: 13em;
         }
 
         .f2-botao {
@@ -497,7 +496,6 @@
             display: flex;
             justify-content: space-between;
             height: 4em;
-            width: 123em;
             z-index: -1;
             background-color: black;
         }
@@ -506,7 +504,7 @@
             width: 0px;
         }
         .f2-1-1 {
-            margin-left: -5em;
+            margin-left: -25em;
         }
 
         .f3-botao {
@@ -522,7 +520,6 @@
             flex-direction: row;
             height: 14em;
             background-color: #3D3D3D;
-            width: 123em ;
             margin-top: 10em;
         }
         /* Primeira Div */
@@ -630,7 +627,8 @@
             margin-right: 15em;
         }
         .f1-r-c4-1{
-            margin-left: -5em;
+            margin-left: 10em;
+            width: 12%;
         }
         .f1-r-in-21{
             position: relative;
@@ -649,7 +647,8 @@
             color: #e0e0e0;
             font-family: 'inter';
             font-size: 0.9em;
-            margin-bottom: 1em;
+            margin-top: 2.6em;
+            margin-bottom: 4.5em;
         }
         
         .f1-r-in-23{
