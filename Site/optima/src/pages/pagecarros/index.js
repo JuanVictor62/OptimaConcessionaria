@@ -35,7 +35,7 @@ export default function index() {
         <main className="container">
             <div className="f2-cabecalho">
                 <Link to="/">
-                    <img className="f2-logo62" src="../../assets/img/Logo.svg" alt='' />
+                    <img onClick={sairClick} className="f2-logo62" src="../../assets/img/Logo.svg" alt='' />
                 </Link>
 
                     <Link to="/cadastrocarro" className="f3-botao"> Cadastrar </Link>
