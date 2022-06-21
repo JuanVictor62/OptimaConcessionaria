@@ -535,6 +535,7 @@
     }
 
     @media(max-width: 1280px) {
+
         .f2-cabecalho{
             display: flex;
             justify-content: space-between;
@@ -707,25 +708,26 @@
     }
 
     @media (max-width:414px) {
+
         .f2-cabecalho{
             width: 25.9em;
 
             .f3-botao{
-                left: 1.5em;
+                left: -0.1em;
             }
 
-            .f2-botao{
-                left: 2em;
+            .f4-botao{
+                left: -1em;
             }
         }
 
         .f1-rodape{
-            width: 26em;
+            width: 25.9em;
             height: 23.8em;
             margin-bottom: 0em;
             margin-right: 0em;
 
-            margin-left: -0.1em;
+            margin-left: 0em;
 
             .f1-r-logo{
                 position: relative;
@@ -744,6 +746,7 @@
                 margin-right: 0px;
 
                 .f1-r-img1{
+                    margin-left: 1em;
                     width: 1.5em;
                     height: 1.5em; 
                 }
@@ -770,7 +773,7 @@
             }
 
             .f1-r-tpc{
-                margin-left: -2em;
+                margin-left: -3em;
                 .f1-r-tpc1{
                     position: relative;
                     left: 1.5em;
@@ -782,37 +785,33 @@
                 }
 
                 .f1-r-tpc3{
-                    margin-left: -2.5;
+                    position: relative;
+                    left: -2em;
                 }
             }
 
-            .f1-r-c4-1{
+            .f1-r-d3{
                 position: relative;
-                left: -45em;
-                .f1-r-c4{
+                left: -50em;
+                width: 0px;
+
+                .f1-r-d3-img1, .f1-r-d3-p1{
                     display: none;
                 }
 
-                .f1-r-in-22{
+                .f1-r-d3-p2{
                     position: relative;
-                    top: 20em;
-                    left: 41em;
+                    top: 16em;
+                    left: 33em;
                 }
 
-                .f1-r-in-23{
+                .f1-r-d3-p3{
                     position: relative;
-                    top: 18em;
-                    left: 41em;
+                    top: 15em;
+                    left: 33em;
                     width: 15em;
                 }
             }
-
-            .f1-r-d3 {
-                display: none;
-            }
-
-
-
 
         }
         
