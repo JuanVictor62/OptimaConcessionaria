@@ -20,7 +20,7 @@ server.post('/veiculo', async (req, resp) => {
             throw new Error('Placa do veiculo é obrigatorio!');
         if (novoVeiculo.anofab < 0 || undefined)
             throw new Error('Ano de Fabricação do veiculo é obrigatorio!');
-        if (!novoVeiculo.km.trim())
+        if (!novoVeiculo.km)
             throw new Error('Quilometragem do veiculo é obrigatorio!');
         if (!novoVeiculo.classe.trim())
             throw new Error('Classe do veiculo é obrigatorio!');

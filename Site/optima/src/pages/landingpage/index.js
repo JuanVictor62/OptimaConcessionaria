@@ -80,8 +80,10 @@ export default function index() {
                     <div className='f1-f3-1'>
 
                         <div className='f1-f3-frases'>
+                            <div className='f1-f3-frases-float'>
                             <h1 className='f1-in-6'>O SEU SEMI-NOVO</h1>
                             <h1 className='f1-in-7'>ESTA AQUI</h1>
+                            </div>
                             <p className='f1-in-8'>O design do novo Jetta GLI continua destacado com suas linhas dinâmicas e superfícies
                                 bem definidas mantendo o apelo esportivo. No interior muita tecnologia, luxo e conforto. Podemos
                                 destacar tambem seu estofado confortavel.</p>
