@@ -48,7 +48,7 @@ export default function index() {
             
             <footer className='f1-rodape'>
                     <div className='f1-r-d1'>
-                        <Link to="/landingpage"> <img className='f1-r-logo' src="./assets/img/optima white.png" alt='' /> </Link>
+                        <Link to="/"> <img className='f1-r-logo' src="./assets/img/optima white.png" alt='' /> </Link>
                         <p className='f1-r-in-18'> &copy;Optima 2022</p>
                     </div>
                     <div className='f1-r-d2'>
@@ -81,18 +81,17 @@ export default function index() {
                         </div>
                     </div>
 
-                    <div className='aaaa'>
-                        <div className='f1-r-c4'>
-                            <img className='f1-r-img-4' src="./assets/img/icons8-whatsapp-192.png" alt='' />
-                            <p className='f1-r-in-21'>11 59746879</p>
-                        </div>
-                        <div>
-                            <p className='f1-r-in-22'> Optimaconce@gmail.com</p>
+                <div className='f1-r-d3'> 
+                    <img className='f1-r-d3-img1' src="./assets/img/icons8-whatsapp-192.png" alt='' />
+                    <p className='f1-r-d3-p1'> 11 59746879 </p>
 
-                            <p className='f1-r-in-23'>Av. das nações unidas,1206 - São Paulo - 04776-002</p>
-                        </div>
-                    </div>
-                </footer>
+                    <p className='f1-r-d3-p2'> Optimaconce@gmail.com </p>
+
+                    <p className='f1-r-d3-p3'> Av. das nações unidas,1206 - São Paulo - 04776-002 </p>
+
+
+                </div>
+            </footer>
         </main>
     );
 }

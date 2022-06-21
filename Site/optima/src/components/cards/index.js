@@ -4,6 +4,7 @@ import '../../pages/commom/commom.css'
 import { Link, useNavigate } from 'react-router-dom';
 import  {  confirmAlert  }  from  'react-confirm-alert';
 import { useEffect, useState } from 'react';
+import { toast } from  'react-toastify'
 
 
     export default function Index(){
@@ -45,7 +46,7 @@ import { useEffect, useState } from 'react';
                         onClick: async () => {
                             const resposta = await apagarVeiculo(id);
                             carregarVeiculos();
-                            alert('veículo removido')
+                            toast.dark('veículo removido 🗑️✔️')
                         }
                     },
                     {

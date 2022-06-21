@@ -16,13 +16,13 @@ server.post('/veiculo', async (req, resp) => {
             throw new Error('Marca do veiculo é obrigatorio!');
         if (novoVeiculo.valor < 0 || undefined)
             throw new Error('Valor do veiculo é obrigatorio!');
-        if (!novoVeiculo.placa)
+        if (!novoVeiculo.placa.trim())
             throw new Error('Placa do veiculo é obrigatorio!');
         if (novoVeiculo.anofab < 0 || undefined)
             throw new Error('Ano de Fabricação do veiculo é obrigatorio!');
-        if (!novoVeiculo.km)
+        if (!novoVeiculo.km.trim())
             throw new Error('Quilometragem do veiculo é obrigatorio!');
-        if (!novoVeiculo.classe)
+        if (!novoVeiculo.classe.trim())
             throw new Error('Classe do veiculo é obrigatorio!');
 
         const veiculoinserido = await inserirVeiculo(novoVeiculo);
@@ -109,13 +109,13 @@ server.put('/veiculo', async (req, resp) => {
             throw new Error('Marca do veiculo é obrigatorio!');
         if (veiculo.valor.trim() < 0)
             throw new Error('Valor do veiculo é obrigatorio!');
-        if (!veiculo.placa)
+        if (!veiculo.placa.trim())
             throw new Error('Placa do veiculo é obrigatorio!');
         if (veiculo.anofab < 0 || undefined)
             throw new Error('Ano de Fabricação do veiculo é obrigatorio!');
-        if (!veiculo.km)
+        if (!veiculo.km.trim())
             throw new Error('Quilometragem do veiculo é obrigatorio!');
-        if (!veiculo.classe)
+        if (!veiculo.classe.trim())
             throw new Error('Classe do veiculo é obrigatorio!');
 
         const resposta = await alterarVeiculo(id, veiculo);
