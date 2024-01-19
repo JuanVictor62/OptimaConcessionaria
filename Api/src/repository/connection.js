@@ -7,6 +7,6 @@ const con = await mysql.createConnection({
     database: process.env.MYSQL_DB
 })
 
-console.log("Banco de Dados Conectado!")
+console.log("Conexão com o Banco de Dados estabelecida!")
 
 export { con }
