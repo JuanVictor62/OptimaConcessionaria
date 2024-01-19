@@ -3,6 +3,7 @@ import { login } from '../repository/usuarioRepository.js'
 import { Router } from "express";
 const server = Router();
 
+// logar no sistema
 server.post('/usuario/login', async (req, resp) => {
     try {
         const { nome, senha } = req.body;
@@ -11,7 +12,7 @@ server.post('/usuario/login', async (req, resp) => {
         if (!resposta) {
             throw new Error("Credenciais invalidas");
         }
-        resp.send(resposta)
+        resp.send(resposta);
     } catch (err) {
         resp.status(401).send({
             erro: err.message
