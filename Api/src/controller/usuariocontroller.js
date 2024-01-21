@@ -1,4 +1,4 @@
-import { login } from '../repository/usuarioRepository.js'
+import { login } from "../repository/usuarioRepository.js"
 
 import { Router } from "express";
 const server = Router();
@@ -12,7 +12,10 @@ server.post('/usuario/login', async (req, resp) => {
         if (!resposta) {
             throw new Error("Credenciais invalidas");
         }
-        resp.send(resposta);
+        resp.send({
+            id: resposta.id,
+            nome: resposta.nome
+        });
     } catch (err) {
         resp.status(401).send({
             erro: err.message
