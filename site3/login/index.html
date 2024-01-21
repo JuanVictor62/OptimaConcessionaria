@@ -10,13 +10,17 @@
 
 <body>
 
-    <form id="loginForm">
-        <input type="text" placeholder="E-mail" id="email">
-        <input type="text" placeholder="Senha" id="password">
+    <form id="loginForm" class="loginForm">
+        <div class="form">
+            <input type="text" placeholder="E-mail" id="email">
+            <input type="text" placeholder="Senha" id="password">
+            
+        </div>
         <button type="submit" id="buttonEnter"> Entrar </button>
+        <p class="loginError" id="loginError"> </p>
+
     </form>
 
-    <p class="loginError" id="loginError">  </p>
 </body>
 <script src="./index.js"></script>
 

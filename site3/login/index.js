@@ -1,7 +1,7 @@
 let email;
 let password;
 
-const url = 'http://localhost:5000/usuario/login';
+const url = "http://localhost:5000/usuario/login";
 
 function credential() { // Pegar email e senha
 
@@ -17,8 +17,6 @@ function credential() { // Pegar email e senha
 
 function login(email, password) {
 
-    let r = 0;
-
     try {
         fetch(url, {
             method: "POST",
@@ -33,25 +31,18 @@ function login(email, password) {
             .then(response => {
                 if (!response.ok) {
                     response.json().then(data => {
-                        alternateText(data.erro) // Deixar vermelho o texto
-                        throw new Error(data.erro)
+                        alternateText(data.erro); // Deixar vermelho o texto
+                        throw new Error(data.erro);
                     })
                 } else {
-                    window.location.href = 'http://127.0.0.1:5500/site3/pageCarros/index.html';
-                    localStorage.setItem(emailFixed, passwordFixed);
-                    r = 1
-                    return response.json();
+                    response.json().then(data => {
+                        localStorage.setItem("Usuário-Logado", `Name: ${data.nome} | ID: ${data.id}`);
+                    })
+                    redirect() // direcionar pra pageCarros 
                 }
             })
-            .then(data => {
-                const id = data.id
-                const nome = data.nome
-
-                console.log("Id: " + id)
-                console.log("Nome: " + nome)
-            })
             .catch(error => {
-                console.error('Erro na requisição:', error);
+                console.error("Erro na requisição:", error);
             });
 
     } catch (error) {
@@ -66,8 +57,16 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 })
 
 function alternateText(error) {
-    let id = document.getElementById("loginError")
+    let id = document.getElementById("loginError");
     id.style.color = "red";
     id.style.display = "block";
     id.innerHTML= error;
 }
+
+function redirect() {
+    document.getElementById("buttonEnter").innerHTML = '<img src="https://img1.picmix.com/output/stamp/normal/8/5/2/9/509258_fb107.gif" alt="" class="loginLoading">';
+    // setTimeout(() => {
+    //     window.location.href = "http://127.0.0.1:5500/site3/pageCarros/index.html";                        
+    // }, 1000);
+}
+
