@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .loginForm {
@@ -12,6 +12,19 @@ body {
         display: flex;
         flex-direction: row;
     }
+
+    .buttonEnter {
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 5px;
+
+        padding: 1em 2em;
+        font-weight: 700;
+
+        cursor: pointer;
+    }
+
     .loginLoading {
         height: 14px;
         width: auto;
