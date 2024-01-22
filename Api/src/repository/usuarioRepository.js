@@ -1,5 +1,34 @@
 import { con } from "./connection.js";
 
+import jwt from 'jsonwebtoken'
+const secretKey = process.env.SECRET_KEY;
+
+
+export async function generateToken(id, nome) {
+    const payload = {
+        id,
+        nome
+    };
+    const options = {
+        expiresIn: '120s'
+    }
+    return jwt.sign(payload, secretKey, options);
+}
+
+export async function verifyToken(token) {
+    try {
+        
+        const decoded = jwt.verify(token, secretKey);
+
+        // O token é válido
+        console.log('Token válido:', decoded);
+        return true;
+
+    } catch (error) {
+        return false
+    }
+}
+
 export async function login(nome, senha) {
     const comando = `select 	id_funcionario     id,
                                 ds_funcionario     nome

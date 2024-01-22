@@ -1,44 +1,34 @@
-import { login } from "../repository/usuarioRepository.js";
-import session from "express-session";
+import { generateToken, login, verifyToken } from "../repository/usuarioRepository.js";
 
 import { Router } from "express";
 const server = Router();
 
-server.use(session({secret: "aspmd4389m8rfji9jiojias9102", resave: true, saveUninitialized: true}));
 
-// logar no sistema
+//! logar no sistema
 server.post("/usuario/login", async (req, resp) => {
     try {
         const { nome, senha } = req.body;
 
         const resposta = await login(nome, senha);
 
-        if (!resposta) { // Validar se o login existe
+        if (!resposta) { //! Validar se o login existe
             throw new Error("Credenciais invalidas");
         }
+        
+        let token = generateToken(resposta.id, resposta.nome)
+        verifyToken(token);
 
-        req.session.nome = nome;
-        resp.redirect("/site3/pageCarros/index.html");
+        resp.send({
+             id: resposta.id,
+             nome: resposta.nome,
+             token: token
+        });
 
-
-        // resp.send({
-        //      id: resposta.id,
-        //      nome: resposta.nome
-        // });
-    } catch (err) {
+    } catch (err) { 
         resp.status(401).send({
             erro: err.message
         });
     }
-})
-
-
-server.get("/site3/pageCarros", (req, resp) => {
-    // if(req.session.login) {
-        resp.render("index");
-    // } else {
-    //     resp.render("index")
-    // }
 })
 
 

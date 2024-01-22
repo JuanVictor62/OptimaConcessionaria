@@ -3,9 +3,16 @@ use SistemaOptimaFrei;
 select * from tb_veiculo;
 select * from tb_funcionario;
 
+select 	id_funcionario     id,
+                                ds_funcionario     nome
+                from   tb_funcionario
+                    where  ds_funcionario  = 'admin'
+                    and ds_senha     	   =  MD5(1234);
+
+
 -- Efetuar Login
 insert into tb_funcionario (ds_funcionario,ds_senha)
-	   values ('admin','1234');
+	   values ('admin', MD5('1234'));
 
 -- CSU01: Efetuar login
 select 	id_funcionario     id,

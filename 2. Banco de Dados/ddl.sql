@@ -1,10 +1,11 @@
 create database SistemaOptimaFrei;
 use SistemaOptimaFrei;
 
+
 create table tb_funcionario(
     id_funcionario    int primary key auto_increment,
-    ds_funcionario    varchar(14),
-    ds_senha          varchar(14)
+    ds_funcionario    varchar(800),
+    ds_senha          varchar(800)
 );
 
 create table tb_veiculo(
