@@ -35,6 +35,15 @@ export async function login(nome, senha) {
                 from   tb_funcionario
                     where  ds_funcionario  = ?
                     and ds_senha     	   =  MD5(?) `
-    const [linhas] = await con.query(comando, [nome, senha])
+    const [linhas] = await con.query(comando, [nome, senha]);
+    return linhas[0];
+}
+
+
+export async function consultLastToken(id) {
+    const comando = `   SELECT DS_LASTTOKEN 	'Last Token'
+                    FROM TB_FUNCIONARIO 
+                        WHERE ID_FUNCIONARIO = ?`
+    const [linhas] = await con.query(comando, [id]);
     return linhas[0];
 }

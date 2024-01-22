@@ -3,12 +3,6 @@ use SistemaOptimaFrei;
 select * from tb_veiculo;
 select * from tb_funcionario;
 
-select 	id_funcionario     id,
-                                ds_funcionario     nome
-                from   tb_funcionario
-                    where  ds_funcionario  = 'admin'
-                    and ds_senha     	   =  MD5(1234);
-
 
 -- Efetuar Login
 insert into tb_funcionario (ds_funcionario,ds_senha)
@@ -29,15 +23,22 @@ insert into tb_veiculo (ds_modelo, ds_marca, vl_valor, ds_placa, dt_anofab, vl_k
 
 -- CSU2.1: alterar imagem 
 update tb_funcionario
-	set img_veiculo      = '/storage/filme/dfasfsdf.jpg'
+	set img_veiculo = '/storage/filme/dfasfsdf.jpg'
 where id_veiculo = 1;
 
+-- Consultar Token
+SELECT DS_LASTTOKEN 	'Last Token'
+	FROM TB_FUNCIONARIO 
+WHERE ID_FUNCIONARIO = 1;
 
+-- Sobrescrever Token
+UPDATE TB_FUNCIONARIO
+	SET DS_LASTTOKEN = ('ABAB')
+WHERE ID_FUNCIONARIO = 1;
 
 -- CSU04: Remover Veiculo
 delete from tb_veiculo
 	where id_veiculo = 1;
-
 
 
 -- CSU05: Consultar veiculo por nome 

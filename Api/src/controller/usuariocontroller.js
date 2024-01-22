@@ -1,4 +1,4 @@
-import { generateToken, login, verifyToken } from "../repository/usuarioRepository.js";
+import { consultLastToken, generateToken, login, verifyToken } from "../repository/usuarioRepository.js";
 
 import { Router } from "express";
 const server = Router();
@@ -15,8 +15,8 @@ server.post("/usuario/login", async (req, resp) => {
             throw new Error("Credenciais invalidas");
         }
         
-        let token = generateToken(resposta.id, resposta.nome)
-        verifyToken(token);
+        let token = await generateToken(resposta.id, resposta.nome)
+        await verifyToken(token);
 
         resp.send({
              id: resposta.id,
@@ -28,6 +28,23 @@ server.post("/usuario/login", async (req, resp) => {
         resp.status(401).send({
             erro: err.message
         });
+    }
+})
+
+
+server.post('/usuario/login/token', async (req, resp) => {
+    try {
+        const { id } = req.body;
+        const resposta = await consultLastToken(id);
+        
+        if (!resposta) {
+            throw new Error("Token não localizado");
+        }
+
+        resp.send(resposta);
+
+    } catch (error) {
+        console.log(error)
     }
 })
 
