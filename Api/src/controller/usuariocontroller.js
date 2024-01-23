@@ -3,7 +3,6 @@ import { consultLastToken, generateToken, login, verifyToken } from "../reposito
 import { Router } from "express";
 const server = Router();
 
-
 //! logar no sistema
 server.post("/usuario/login", async (req, resp) => {
     try {
@@ -15,7 +14,7 @@ server.post("/usuario/login", async (req, resp) => {
             throw new Error("Credenciais invalidas");
         }
         
-        let token = await generateToken(resposta.id, resposta.nome)
+        let token = await generateToken(resposta.id, resposta.nome);
         await verifyToken(token);
 
         resp.send({
