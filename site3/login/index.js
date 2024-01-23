@@ -3,7 +3,7 @@ let password;
 
 const url = "http://localhost:5500/usuario/login";
 
-const expirationCookie = new Date(Date.now() + 2 * 60 * 1000);
+const expirationCookie = new Date(Date.now() + 60 * 60 * 1000);
 
 function credential() { // Pegar email e senha
 
@@ -38,9 +38,9 @@ function login(email, password) {
                     })
                 } else {
                     response.json().then(data => {
-                        document.cookie=`token=${data.token}; expires=${expirationCookie.toUTCString()}; path=/`;  	
+                        document.cookie=`token=${data.token}; expires=${expirationCookie.toUTCString()}; path= /`; // Adicionar o token em um cookie
                     })
-                    redirect() // direcionar pra pageCarros
+                    redirect()
                 }
             })
             .catch(error => {
@@ -67,6 +67,7 @@ function alternateText(error) {
 
 function redirect() {
     document.getElementById("buttonEnter").innerHTML = '<img src="https://img1.picmix.com/output/stamp/normal/8/5/2/9/509258_fb107.gif" alt="" class="loginLoading">';
+
     setTimeout(() => {
         window.location.href = "http://127.0.0.1:5500/site3/pageCarros/index.html";                        
     }, 1000)

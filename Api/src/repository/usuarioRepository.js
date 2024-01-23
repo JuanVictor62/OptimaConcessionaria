@@ -11,7 +11,7 @@ export async function generateToken(id, nome) {
         nome
     };
     const options = {
-        expiresIn: '120s'
+        expiresIn: '30s'
     };
     return jwt.sign(payload, secretKey, options);
 }
@@ -19,8 +19,7 @@ export async function generateToken(id, nome) {
 
 export async function verifyToken(token) { // True = Válido | False = Expirou
     try {
-        const decoded = jwt.verify(token, secretKey);
-
+        jwt.verify(token, secretKey);
         return true;
         
     } catch (error) {

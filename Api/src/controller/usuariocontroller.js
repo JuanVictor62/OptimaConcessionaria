@@ -31,19 +31,40 @@ server.post("/usuario/login", async (req, resp) => {
 })
 
 
-server.post('/usuario/login/token', async (req, resp) => {
-    try {
-        const { id } = req.body;
-        const resposta = await consultLastToken(id);
+// server.post('/usuario/login/token', async (req, resp) => {
+//     try {
+//         const { id } = req.body;
+//         const resposta = await consultLastToken(id);
         
-        if (!resposta) {
-            throw new Error("Token não localizado");
+//         if (!resposta) {
+//             throw new Error("Token não localizado");
+//         }
+
+//         resp.send(resposta);
+
+//     } catch (error) {
+//         console.log(error)
+//     }
+// })
+
+server.post('/usuario/login/validToken', async (req, resp) => {
+    try {
+
+        const { token } = req.body
+
+        let a = await verifyToken(token)
+
+        if (!a) { // Token não existe
+            throw new Error('Token não Existe')
         }
 
-        resp.send(resposta);
+        resp.send('Token existe')
+
 
     } catch (error) {
-        console.log(error)
+        resp.status(400).send({
+            erro: error.message
+        })
     }
 })
 
