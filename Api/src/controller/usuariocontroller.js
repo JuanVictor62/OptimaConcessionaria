@@ -1,4 +1,4 @@
-import { consultLastToken, generateToken, login, verifyToken } from "../repository/usuarioRepository.js";
+import { generateToken, login, verifyToken } from "../repository/usuarioRepository.js";
 
 import { Router } from "express";
 const server = Router();
@@ -31,40 +31,25 @@ server.post("/usuario/login", async (req, resp) => {
 })
 
 
-// server.post('/usuario/login/token', async (req, resp) => {
-//     try {
-//         const { id } = req.body;
-//         const resposta = await consultLastToken(id);
-        
-//         if (!resposta) {
-//             throw new Error("Token não localizado");
-//         }
-
-//         resp.send(resposta);
-
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
-
-server.post('/usuario/login/validToken', async (req, resp) => {
+//! Verificar se o Token expirou
+server.post("/usuario/login/validToken", async (req, resp) => {
     try {
 
-        const { token } = req.body
+        const { token } = req.body;
 
-        let a = await verifyToken(token)
+        let tokenIsValid = await verifyToken(token);
 
-        if (!a) { // Token não existe
-            throw new Error('Token não Existe')
+        if (!tokenIsValid) { // Token não existe
+            throw new Error("Invalid Token");
         }
 
-        resp.send('Token existe')
+        resp.send(true);
 
 
     } catch (error) {
-        resp.status(400).send({
-            erro: error.message
-        })
+        resp.status(401).send({
+            error: error.message
+        });
     }
 })
 
