@@ -1,7 +1,7 @@
 let email;
 let password;
 
-const url = "http://localhost:5500/usuario/login";
+const url = "http://localhost:5000/usuario/login";
 
 const expirationCookie = new Date(Date.now() + 60 * 60 * 1000);
 
@@ -66,9 +66,12 @@ function alternateText(error) {
 }
 
 function redirect() {
-    document.getElementById("buttonEnter").innerHTML = '<img src="https://img1.picmix.com/output/stamp/normal/8/5/2/9/509258_fb107.gif" alt="" class="loginLoading">';
+
+    let spinHtml = '<div class="dot-spinner"> <div class="dot-spinner__dot"></div> <div class="dot-spinner__dot"></div> <div class="dot-spinner__dot"></div> <div class="dot-spinner__dot"></div> <div class="dot-spinner__dot"></div> <div class="dot-spinner__dot"></div> <div class="dot-spinner__dot"></div> <div class="dot-spinner__dot"></div> </div>'
+
+    document.getElementById("buttonEnter").innerHTML = spinHtml;
 
     setTimeout(() => {
-        window.location.href = "http://127.0.0.1:5500/site3/pageCarros/index.html";                        
+        window.location.href = "http://127.0.0.1:5500/site3/pageCarros/oia.html";                        
     }, 1000)
 }

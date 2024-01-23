@@ -45,13 +45,11 @@ server.post("/usuario/login/validToken", async (req, resp) => {
 
         resp.send(true);
 
-
     } catch (error) {
         resp.status(401).send({
             error: error.message
         });
     }
 })
-
 
 export default server;
