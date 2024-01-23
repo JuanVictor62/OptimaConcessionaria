@@ -3,6 +3,12 @@ import { generateToken, login, verifyToken } from "../repository/usuarioReposito
 import { Router } from "express";
 const server = Router();
 
+
+server.use((req, resp, next) => {
+    
+})
+
+
 //! logar no sistema
 server.post("/usuario/login", async (req, resp) => {
     try {
