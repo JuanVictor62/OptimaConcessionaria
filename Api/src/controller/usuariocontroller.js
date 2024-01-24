@@ -1,16 +1,40 @@
-import { generateToken, login, verifyToken } from "../repository/usuarioRepository.js";
+import jwt from 'jsonwebtoken';
+import cookieParser from 'cookie-parser';
+import { generateToken, login } from "../repository/usuarioRepository.js";
 
 import { Router } from "express";
 const server = Router();
 
+server.use(cookieParser())
 
-server.use((req, resp, next) => {
-    
+const secretKey = process.env.SECRET_KEY
+
+// middleware para o token
+const verifyToken = (req, res, next) => {
+    const token = req.cookies.token;
+
+    if (!token) {
+      return res.redirect('/login');
+    }
+
+    try {
+      const decoded = jwt.verify(token, secretKey);
+      next()
+    } catch (erro) {
+      return res.redirect('/login'); // caso haja o token mas não seja válido
+    }
+  };
+
+server.get('/pageCarros', verifyToken, (req, resp) => {
+    resp.send({ message: 'Token válido' })
 })
 
+server.get('/login', (req, resp) => {
+    resp.send({Message: "Login"})
+})
 
 //! logar no sistema
-server.post("/usuario/login", async (req, resp) => {
+server.post("/login", async (req, resp) => {
     try {
         const { nome, senha } = req.body;
 
@@ -21,7 +45,7 @@ server.post("/usuario/login", async (req, resp) => {
         }
         
         let token = await generateToken(resposta.id, resposta.nome);
-        await verifyToken(token);
+        resp.cookie('token', token, { httpOnly: true, maxAge: 120000 });
 
         resp.send({
              id: resposta.id,
@@ -32,28 +56,6 @@ server.post("/usuario/login", async (req, resp) => {
     } catch (err) { 
         resp.status(401).send({
             erro: err.message
-        });
-    }
-})
-
-
-//! Verificar se o Token expirou
-server.post("/usuario/login/validToken", async (req, resp) => {
-    try {
-
-        const { token } = req.body;
-
-        let tokenIsValid = await verifyToken(token);
-
-        if (!tokenIsValid) { // Token não existe
-            throw new Error("Invalid Token");
-        }
-
-        resp.send(true);
-
-    } catch (error) {
-        resp.status(401).send({
-            error: error.message
         });
     }
 })
